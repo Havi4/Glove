@@ -9,12 +9,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FDFullscreenPopGesture.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-GlovesV1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Realm.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,7 +42,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2E61F4929B974229A4B069095CA673C9</key>
+		<key>2C71DE0FB8A6E5BB6EAF9FB037D799CC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3BBA757BDFF30059ED210B3F954955EA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5334C0FA6A5F1FFD358B0C56754B6B09</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,7 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>63717F1079EFBD9C51F2063F6EDEB2F4</key>
+		<key>5D7583DDD338548611669C46DDB17D28</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,7 +72,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ACF5AF99B7C29E632A25B0A771AD8CC5</key>
+		<key>E52464EBF29EACA578751607E8076DB4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

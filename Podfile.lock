@@ -14,7 +14,11 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - FDFullscreenPopGesture (1.1)
   - Masonry (1.0.2)
+  - Realm (2.0.1):
+    - Realm/Headers (= 2.0.1)
+  - Realm/Headers (2.0.1)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -24,16 +28,20 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - FDFullscreenPopGesture (= 1.1)
   - Masonry (~> 1.0.2)
+  - Realm (~> 2.0.1)
   - SDWebImage (~> 3.8.2)
   - YYKit (~> 1.0.7)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  Realm: 0557ee0e4ab4f0936c90e370056d1ed6265f93d6
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 488d42f7949c83234ab4837ff134887e813373af
+PODFILE CHECKSUM: 2f1aedd57deeb6a53d967c1b9dc90103342daca3
 
 COCOAPODS: 1.0.1
