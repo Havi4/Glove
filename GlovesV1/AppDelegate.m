@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    MIScene *homeScene = [MIScene sceneWithView:@"HomeView" controller:@"HomeViewController" store:@"HomeStore"];
+    UIViewController *homeController = [[MIMediator sharedMediator] viewControllerWithScene:homeScene context:nil];
+    homeController.fd_prefersNavigationBarHidden = YES;
+    BaseNavigationController *homeNavi = [[BaseNavigationController alloc]initWithRootViewController:homeController];
+    self.window.rootViewController = homeNavi;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

@@ -52,7 +52,11 @@
     // Set up pipeline
     [self setupPipeline:self.store.pipeline];
     [self.view setupPipeline:self.store.pipeline];
-    self.view.backgroundColor = kBackgroundColor;
+//    self.view.backgroundColor = [UIColor whiteColor];
+    UIImageView *backImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, kScreenSize.width, kScreenSize.height)];
+    backImageView.image = [UIImage imageNamed:@"background_image"];
+    [self.view addSubview:backImageView];
+    [self.view sendSubviewToBack:backImageView];
     // Add observers of the pipeline data.
     [self addObservers];
 }

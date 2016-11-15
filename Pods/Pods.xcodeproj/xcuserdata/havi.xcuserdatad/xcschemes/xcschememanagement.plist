@@ -34,7 +34,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>VBFPopFlatButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>YYKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>pop.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,17 +52,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>08935C8FFBDB973666EDF91F45CE5381</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2C71DE0FB8A6E5BB6EAF9FB037D799CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3BBA757BDFF30059ED210B3F954955EA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5334C0FA6A5F1FFD358B0C56754B6B09</key>
+		<key>4AD5AAD0D627E5F09E23A5A27274588A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +72,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5D7583DDD338548611669C46DDB17D28</key>
+		<key>8678409D07066D85F7FDD5EE58A1C536</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +82,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E52464EBF29EACA578751607E8076DB4</key>
+		<key>C16ABD404EAF0ABC1E3B4EC3A783D025</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DAF6AF932D681422484B4695DB269FCA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FBBB3409F41825CC6276BA818A1C3C3A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
