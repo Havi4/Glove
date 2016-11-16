@@ -1,22 +1,22 @@
 //
-// SettingViewController.m
+// MineViewController.m
 // BaseAppStruct
 //
-// Created by Havi on 2016/11/14
+// Created by Havi on 2016/11/16
 // Copyright 2016 Havi. All right reserved.
 //
 
-#import "SettingViewController.h"
-#import "SettingPipeline.h"
+#import "MineViewController.h"
+#import "MinePipeline.h"
 #import "Minya.h"
 
-@interface SettingViewController ()
+@interface MineViewController ()
 
-@property (nonatomic, strong) SettingPipeline *pipeline;
+@property (nonatomic, strong) MinePipeline *pipeline;
 
 @end
 
-@implementation SettingViewController
+@implementation MineViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

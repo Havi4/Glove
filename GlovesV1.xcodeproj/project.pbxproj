@@ -102,14 +102,15 @@
 		573EE5531DD9C59100D5D133 /* HomeStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE54D1DD9C59100D5D133 /* HomeStore.m */; };
 		573EE5541DD9C59100D5D133 /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE54F1DD9C59100D5D133 /* HomeView.m */; };
 		573EE5551DD9C59100D5D133 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE5511DD9C59100D5D133 /* HomeViewController.m */; };
-		573EE55F1DD9C59C00D5D133 /* SettingPipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE5581DD9C59C00D5D133 /* SettingPipeline.m */; };
-		573EE5601DD9C59C00D5D133 /* SettingStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE55A1DD9C59C00D5D133 /* SettingStore.m */; };
-		573EE5611DD9C59C00D5D133 /* SettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE55C1DD9C59C00D5D133 /* SettingView.m */; };
-		573EE5621DD9C59C00D5D133 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE55E1DD9C59C00D5D133 /* SettingViewController.m */; };
 		573EE5651DD9C5E800D5D133 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE5641DD9C5E800D5D133 /* BaseNavigationController.m */; };
 		573EE5681DDAE9A600D5D133 /* PopListButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE5671DDAE9A600D5D133 /* PopListButton.m */; };
 		573EE56B1DDAEC3300D5D133 /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE56A1DDAEC3300D5D133 /* UIColor+FlatColors.m */; };
 		573EE56E1DDB139C00D5D133 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE56D1DDB139C00D5D133 /* BaseView.m */; };
+		573EE5721DDB6A5400D5D133 /* GameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE5711DDB6A5400D5D133 /* GameTableViewCell.m */; };
+		573EE5851DDC06CE00D5D133 /* MinePipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE5751DDC06CE00D5D133 /* MinePipeline.m */; };
+		573EE5861DDC06CE00D5D133 /* MineStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE5771DDC06CE00D5D133 /* MineStore.m */; };
+		573EE5871DDC06CE00D5D133 /* MineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE5791DDC06CE00D5D133 /* MineView.m */; };
+		573EE5881DDC06CE00D5D133 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE57B1DDC06CE00D5D133 /* MineViewController.m */; };
 		FDA76DD272DE3207140B18CC /* libPods-GlovesV1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DE5746400BBEC7A0817F37 /* libPods-GlovesV1.a */; };
 /* End PBXBuildFile section */
 
@@ -328,14 +329,6 @@
 		573EE54F1DD9C59100D5D133 /* HomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
 		573EE5501DD9C59100D5D133 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		573EE5511DD9C59100D5D133 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		573EE5571DD9C59C00D5D133 /* SettingPipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingPipeline.h; sourceTree = "<group>"; };
-		573EE5581DD9C59C00D5D133 /* SettingPipeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingPipeline.m; sourceTree = "<group>"; };
-		573EE5591DD9C59C00D5D133 /* SettingStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingStore.h; sourceTree = "<group>"; };
-		573EE55A1DD9C59C00D5D133 /* SettingStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingStore.m; sourceTree = "<group>"; };
-		573EE55B1DD9C59C00D5D133 /* SettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingView.h; sourceTree = "<group>"; };
-		573EE55C1DD9C59C00D5D133 /* SettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingView.m; sourceTree = "<group>"; };
-		573EE55D1DD9C59C00D5D133 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
-		573EE55E1DD9C59C00D5D133 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		573EE5631DD9C5E800D5D133 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		573EE5641DD9C5E800D5D133 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		573EE5661DDAE9A600D5D133 /* PopListButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopListButton.h; sourceTree = "<group>"; };
@@ -344,6 +337,16 @@
 		573EE56A1DDAEC3300D5D133 /* UIColor+FlatColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatColors.m"; sourceTree = "<group>"; };
 		573EE56C1DDB139C00D5D133 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		573EE56D1DDB139C00D5D133 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		573EE5701DDB6A5400D5D133 /* GameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTableViewCell.h; sourceTree = "<group>"; };
+		573EE5711DDB6A5400D5D133 /* GameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTableViewCell.m; sourceTree = "<group>"; };
+		573EE5741DDC06CE00D5D133 /* MinePipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinePipeline.h; sourceTree = "<group>"; };
+		573EE5751DDC06CE00D5D133 /* MinePipeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinePipeline.m; sourceTree = "<group>"; };
+		573EE5761DDC06CE00D5D133 /* MineStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineStore.h; sourceTree = "<group>"; };
+		573EE5771DDC06CE00D5D133 /* MineStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineStore.m; sourceTree = "<group>"; };
+		573EE5781DDC06CE00D5D133 /* MineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineView.h; sourceTree = "<group>"; };
+		573EE5791DDC06CE00D5D133 /* MineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineView.m; sourceTree = "<group>"; };
+		573EE57A1DDC06CE00D5D133 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		573EE57B1DDC06CE00D5D133 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		A43B8ED08EF840EB48ED6479 /* Pods-GlovesV1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovesV1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GlovesV1/Pods-GlovesV1.debug.xcconfig"; sourceTree = "<group>"; };
 		D4DE5746400BBEC7A0817F37 /* libPods-GlovesV1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GlovesV1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -834,7 +837,7 @@
 		573EE5451DD9ACB900D5D133 /* Glove */ = {
 			isa = PBXGroup;
 			children = (
-				573EE5561DD9C59C00D5D133 /* Setting */,
+				573EE5731DDC06CE00D5D133 /* Mine */,
 				573EE5491DD9C59100D5D133 /* Home */,
 				573EE5461DD9ACE100D5D133 /* AppDelegate */,
 				573EE53E1DD9AC0B00D5D133 /* Resource */,
@@ -858,6 +861,7 @@
 		573EE5491DD9C59100D5D133 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				573EE56F1DDB695700D5D133 /* Views */,
 				573EE54A1DD9C59100D5D133 /* HomePipeline.h */,
 				573EE54B1DD9C59100D5D133 /* HomePipeline.m */,
 				573EE54C1DD9C59100D5D133 /* HomeStore.h */,
@@ -871,20 +875,29 @@
 			path = GlovesV1/Home;
 			sourceTree = "<group>";
 		};
-		573EE5561DD9C59C00D5D133 /* Setting */ = {
+		573EE56F1DDB695700D5D133 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				573EE5571DD9C59C00D5D133 /* SettingPipeline.h */,
-				573EE5581DD9C59C00D5D133 /* SettingPipeline.m */,
-				573EE5591DD9C59C00D5D133 /* SettingStore.h */,
-				573EE55A1DD9C59C00D5D133 /* SettingStore.m */,
-				573EE55B1DD9C59C00D5D133 /* SettingView.h */,
-				573EE55C1DD9C59C00D5D133 /* SettingView.m */,
-				573EE55D1DD9C59C00D5D133 /* SettingViewController.h */,
-				573EE55E1DD9C59C00D5D133 /* SettingViewController.m */,
+				573EE5701DDB6A5400D5D133 /* GameTableViewCell.h */,
+				573EE5711DDB6A5400D5D133 /* GameTableViewCell.m */,
 			);
-			name = Setting;
-			path = GlovesV1/Setting;
+			name = Views;
+			sourceTree = "<group>";
+		};
+		573EE5731DDC06CE00D5D133 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				573EE5741DDC06CE00D5D133 /* MinePipeline.h */,
+				573EE5751DDC06CE00D5D133 /* MinePipeline.m */,
+				573EE5761DDC06CE00D5D133 /* MineStore.h */,
+				573EE5771DDC06CE00D5D133 /* MineStore.m */,
+				573EE5781DDC06CE00D5D133 /* MineView.h */,
+				573EE5791DDC06CE00D5D133 /* MineView.m */,
+				573EE57A1DDC06CE00D5D133 /* MineViewController.h */,
+				573EE57B1DDC06CE00D5D133 /* MineViewController.m */,
+			);
+			name = Mine;
+			path = GlovesV1/Mine;
 			sourceTree = "<group>";
 		};
 		DA9680D35D19C603649C9E8F /* Pods */ = {
@@ -1095,13 +1108,13 @@
 				573EE4C31DD9ABF200D5D133 /* MIMediator.m in Sources */,
 				573EE4BC1DD9ABF200D5D133 /* EXTSafeCategory.m in Sources */,
 				573EE4D81DD9ABF200D5D133 /* MJRefreshStateHeader.m in Sources */,
+				573EE5721DDB6A5400D5D133 /* GameTableViewCell.m in Sources */,
 				573EE53A1DD9AC0000D5D133 /* BaseNetworkAPI.m in Sources */,
 				573EE5281DD9AC0000D5D133 /* AddUserModel.m in Sources */,
 				573EE5291DD9AC0000D5D133 /* AllDeviceModel.m in Sources */,
 				573EE56B1DDAEC3300D5D133 /* UIColor+FlatColors.m in Sources */,
 				573EE4CE1DD9ABF200D5D133 /* MJRefreshFooter.m in Sources */,
 				573EE52D1DD9AC0000D5D133 /* BeingRequestModel.m in Sources */,
-				573EE55F1DD9C59C00D5D133 /* SettingPipeline.m in Sources */,
 				573EE4BB1DD9ABF200D5D133 /* EXTRuntimeExtensions.m in Sources */,
 				573EE4D61DD9ABF200D5D133 /* MJRefreshGifHeader.m in Sources */,
 				573EE3FA1DD9AB6800D5D133 /* AppDelegate.m in Sources */,
@@ -1112,6 +1125,7 @@
 				573EE4B81DD9ABF200D5D133 /* EXTADT.m in Sources */,
 				573EE4C01DD9ABF200D5D133 /* NSMethodSignature+EXT.m in Sources */,
 				573EE4D41DD9ABF200D5D133 /* MJRefreshBackNormalFooter.m in Sources */,
+				573EE5861DDC06CE00D5D133 /* MineStore.m in Sources */,
 				573EE4BD1DD9ABF200D5D133 /* EXTScope.m in Sources */,
 				573EE4C81DD9ABF200D5D133 /* MIStore.m in Sources */,
 				573EE4C11DD9ABF200D5D133 /* LICENSE.md in Sources */,
@@ -1146,8 +1160,6 @@
 				573EE5681DDAE9A600D5D133 /* PopListButton.m in Sources */,
 				573EE4C51DD9ABF200D5D133 /* MIScene.m in Sources */,
 				573EE53D1DD9AC0000D5D133 /* UIImage+Common.m in Sources */,
-				573EE5611DD9C59C00D5D133 /* SettingView.m in Sources */,
-				573EE5601DD9C59C00D5D133 /* SettingStore.m in Sources */,
 				573EE4C91DD9ABF200D5D133 /* MIViewController.m in Sources */,
 				573EE5351DD9AC0000D5D133 /* ServerTimeModelTwo.m in Sources */,
 				573EE4B21DD9ABF200D5D133 /* GetLaunchImage.m in Sources */,
@@ -1167,17 +1179,19 @@
 				573EE5361DD9AC0000D5D133 /* SleepQualityModel.m in Sources */,
 				573EE3F71DD9AB6800D5D133 /* main.m in Sources */,
 				573EE4E01DD9ABF200D5D133 /* UIView+SDAutoLayout.m in Sources */,
-				573EE5621DD9C59C00D5D133 /* SettingViewController.m in Sources */,
 				573EE5271DD9AC0000D5D133 /* AccessTockenModel.m in Sources */,
 				573EE5321DD9AC0000D5D133 /* SensorDataModel.m in Sources */,
 				573EE4DE1DD9ABF200D5D133 /* UIView+MJExtension.m in Sources */,
 				573EE4C41DD9ABF200D5D133 /* MIPipeline.m in Sources */,
 				573EE53C1DD9AC0000D5D133 /* NetWorkingAPI.m in Sources */,
+				573EE5881DDC06CE00D5D133 /* MineViewController.m in Sources */,
 				573EE4CB1DD9ABF200D5D133 /* MJRefreshAutoFooter.m in Sources */,
 				573EE52F1DD9AC0000D5D133 /* FriendListModel.m in Sources */,
 				573EE53B1DD9AC0000D5D133 /* HYBNetworking.m in Sources */,
 				573EE56E1DDB139C00D5D133 /* BaseView.m in Sources */,
 				573EE4D21DD9ABF200D5D133 /* MJRefreshAutoStateFooter.m in Sources */,
+				573EE5851DDC06CE00D5D133 /* MinePipeline.m in Sources */,
+				573EE5871DDC06CE00D5D133 /* MineView.m in Sources */,
 				573EE4BA1DD9ABF200D5D133 /* EXTNil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

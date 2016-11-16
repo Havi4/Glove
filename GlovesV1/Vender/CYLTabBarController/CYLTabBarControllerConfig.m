@@ -34,69 +34,40 @@
 }
 
 - (NSArray *)viewControllers {
-    /*
-    MIScene *reportScene = [MIScene sceneWithView:@"ReportView" controller:@"ReportViewController" store:@"ReportStore"];
-    UIViewController *reportViewController = [[MIMediator sharedMediator] viewControllerWithScene:reportScene context:nil];
-    UIViewController *reportNavigationController = [[CYNavigationViewController alloc]
-                                                    initWithRootViewController:reportViewController];
+    MIScene *homeScene = [MIScene sceneWithView:@"HomeView" controller:@"HomeViewController" store:@"HomeStore"];
+    UIViewController *homeViewController = [[MIMediator sharedMediator] viewControllerWithScene:homeScene context:nil];
+    UIViewController *homeNavigationController = [[CYNavigationViewController alloc]
+                                                    initWithRootViewController:homeViewController];
     
     MIScene *MineScene = [MIScene sceneWithView:@"MineView" controller:@"MineViewController" store:@"MineStore"];
     UIViewController *mineViewController = [[MIMediator sharedMediator] viewControllerWithScene:MineScene context:nil];
     UIViewController *mineNavigationController = [[CYNavigationViewController alloc]
                                                    initWithRootViewController:mineViewController];
     
-    MIScene *messageScene = [MIScene sceneWithView:@"MessageView" controller:@"MessageViewController" store:@"MessageStore"];
-    UIViewController *messageViewController = [[MIMediator sharedMediator] viewControllerWithScene:messageScene context:nil];
-    UIViewController *messageNavigationController = [[CYNavigationViewController alloc]
-                                                    initWithRootViewController:messageViewController];
-    MIScene *devicesScene = [MIScene sceneWithView:@"DevicesView" controller:@"DevicesViewController" store:@"DevicesStore"];
-    UIViewController *devicesViewController = [[MIMediator sharedMediator] viewControllerWithScene:devicesScene context:nil];
-    UIViewController *deviceNavigationController = [[CYNavigationViewController alloc]
-                                                    initWithRootViewController:devicesViewController];
-       //tabBarController.imageInsets = UIEdgeInsetsMake(4.5, 0, -4.5, 0);
-    //tabBarController.titlePositionAdjustment = UIOffsetMake(0, MAXFLOAT);
+    
     NSArray *viewControllers = @[
-                                 reportNavigationController,
-                                 deviceNavigationController,
-                                 messageNavigationController,
+                                 homeNavigationController,
                                  mineNavigationController
                                  ];
     return viewControllers;
-     */
-    return nil;
 }
 
 - (NSArray *)tabBarItemsAttributesForController {
     NSDictionary *firstTabBarItemsAttributes = @{
-                                                 CYLTabBarItemTitle : @"报告",
+                                                 CYLTabBarItemTitle : @"主页",
                                                  CYLTabBarItemImage : @"report_normal",
                                                  CYLTabBarItemSelectedImage : @"report_highlight",
                                                  };
     NSDictionary *secondTabBarItemsAttributes = @{
-                                                  CYLTabBarItemTitle : @"设备",
+                                                  CYLTabBarItemTitle : @"我的",
                                                   CYLTabBarItemImage : @"device_normal",
                                                   CYLTabBarItemSelectedImage : @"device_highlight",
                                                   };
-//    NSDictionary *thirdTabBarItemsAttributes = @{
-//                                                 CYLTabBarItemTitle : @"首页",
-//                                                 CYLTabBarItemImage : @"message_normal",
-//                                                 CYLTabBarItemSelectedImage : @"message_highlight",
-//                                                 };
-    NSDictionary *fourthTabBarItemsAttributes = @{
-                                                  CYLTabBarItemTitle : @"问诊",
-                                                  CYLTabBarItemImage : @"doc_normal",
-                                                  CYLTabBarItemSelectedImage : @"doc_highlight"
-                                                  };
-    NSDictionary *fiveTabBarItemsAttributes = @{
-                                                  CYLTabBarItemTitle : @"我的",
-                                                  CYLTabBarItemImage : @"account_normal",
-                                                  CYLTabBarItemSelectedImage : @"account_highlight"
-                                                  };
+    
     NSArray *tabBarItemsAttributes = @[
                                        firstTabBarItemsAttributes,
                                        secondTabBarItemsAttributes,
-                                       fourthTabBarItemsAttributes,
-                                       fiveTabBarItemsAttributes
+
                                        ];
     return tabBarItemsAttributes;
 }

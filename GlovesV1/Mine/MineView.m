@@ -1,22 +1,22 @@
 //
-// SettingView.m
+// MineView.m
 // BaseAppStruct
 //
-// Created by Havi on 2016/11/14
+// Created by Havi on 2016/11/16
 // Copyright 2016 Havi. All right reserved.
 //
 
-#import "SettingView.h"
+#import "MineView.h"
 #import "UIView+MIPipeline.h"
-#import "SettingPipeline.h"
+#import "MinePipeline.h"
 
-@interface SettingView ()
+@interface MineView ()
 
-@property (nonatomic, strong) SettingPipeline *pipeline;
+@property (nonatomic, strong) MinePipeline *pipeline;
 
 @end
 
-@implementation SettingView
+@implementation MineView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];

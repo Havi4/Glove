@@ -1,22 +1,22 @@
 //
-// SettingStore.m
+// MineStore.m
 // BaseAppStruct
 //
-// Created by Havi on 2016/11/14
+// Created by Havi on 2016/11/16
 // Copyright 2016 Havi. All right reserved.
 //
 
-#import "SettingStore.h"
-#import "SettingPipeline.h"
+#import "MineStore.h"
+#import "MinePipeline.h"
 #import "Minya.h"
 
-@interface SettingStore ()
+@interface MineStore ()
 
-@property (nonatomic, strong) SettingPipeline * settingPipeline;
+@property (nonatomic, strong) MinePipeline * minePipeline;
 
 @end
 
-@implementation SettingStore
+@implementation MineStore
 
 - (instancetype)initWithContext:(NSDictionary<NSString *,id> *)context {
     
@@ -34,7 +34,7 @@
 }
 
 - (__kindof MIPipeline *)pipeline {
-    return self.settingPipeline;
+    return self.minePipeline;
 }
 
 - (void)addObservers {
@@ -47,11 +47,11 @@
 
 #pragma mark - Pipeline
 
-- (SettingPipeline *)settingPipeline {
-    if (!_settingPipeline) {
-        _settingPipeline = [[SettingPipeline alloc] init];
+- (MinePipeline *)minePipeline {
+    if (!_minePipeline) {
+        _minePipeline = [[MinePipeline alloc] init];
     }
-    return _settingPipeline;
+    return _minePipeline;
 }
 
 @end
