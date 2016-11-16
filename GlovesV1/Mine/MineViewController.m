@@ -20,7 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Add you own code 
+    // Add you own code
+    self.title = @"我的";
 }
 
 - (void)setupPipeline:(__kindof MIPipeline *)pipeline {

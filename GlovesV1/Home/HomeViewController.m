@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Add you own code
+    self.title = @"训练";
 }
 
 - (void)setupPipeline:(__kindof MIPipeline *)pipeline {

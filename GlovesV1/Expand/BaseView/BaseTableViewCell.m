@@ -14,9 +14,7 @@
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self setSuperViews];
-        self.backgroundColor = kCellBackColor;
         UIView *backView = [[UIView alloc]initWithFrame:self.bounds];
-        backView.backgroundColor = kBackgroundColor;
         backView.alpha = 0.7;
         self.selectedBackgroundView = backView;
     }

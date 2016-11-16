@@ -103,7 +103,7 @@
 - (UITableView *)gameTable
 {
     if (!_gameTable) {
-        _gameTable = [[UITableView alloc]initWithFrame:CGRectMake(0, 20, kScreenSize.width, kScreenSize.height-20) style:UITableViewStylePlain];
+        _gameTable = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenSize.width, kScreenSize.height-64-49) style:UITableViewStylePlain];
         _gameTable.delegate = self;
         _gameTable.dataSource = self;
         _gameTable.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -113,7 +113,7 @@
 }
 
 - (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath {
-    return NO;
+    return YES;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -129,6 +129,12 @@
     if (!cell) cell = [[GameTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     [cell setImageURL:[NSURL URLWithString:_imageLinks[indexPath.row % _imageLinks.count]]];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    DeBugLog(@"slect %@",indexPath);
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		571EFE791DDC109F001163DD /* Assets 11-55-51-215.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571EFE781DDC109F001163DD /* Assets 11-55-51-215.xcassets */; };
+		571EFE7D1DDC4463001163DD /* 手写大象体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 571EFE7C1DDC4463001163DD /* 手写大象体.ttf */; };
 		573EE3F71DD9AB6800D5D133 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE3F61DD9AB6800D5D133 /* main.m */; };
 		573EE3FA1DD9AB6800D5D133 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE3F91DD9AB6800D5D133 /* AppDelegate.m */; };
 		573EE3FD1DD9AB6800D5D133 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE3FC1DD9AB6800D5D133 /* ViewController.m */; };
@@ -95,7 +97,6 @@
 		573EE53B1DD9AC0000D5D133 /* HYBNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE51C1DD9AC0000D5D133 /* HYBNetworking.m */; };
 		573EE53C1DD9AC0000D5D133 /* NetWorkingAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE51F1DD9AC0000D5D133 /* NetWorkingAPI.m */; };
 		573EE53D1DD9AC0000D5D133 /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE5221DD9AC0000D5D133 /* UIImage+Common.m */; };
-		573EE5421DD9AC0B00D5D133 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 573EE53F1DD9AC0B00D5D133 /* Assets.xcassets */; };
 		573EE5431DD9AC0B00D5D133 /* Setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 573EE5401DD9AC0B00D5D133 /* Setting.plist */; };
 		573EE5441DD9AC0B00D5D133 /* storehouse.plist in Resources */ = {isa = PBXBuildFile; fileRef = 573EE5411DD9AC0B00D5D133 /* storehouse.plist */; };
 		573EE5521DD9C59100D5D133 /* HomePipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE54B1DD9C59100D5D133 /* HomePipeline.m */; };
@@ -133,6 +134,8 @@
 
 /* Begin PBXFileReference section */
 		1F095EB996A9D6D3AC430B9F /* Pods-GlovesV1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovesV1.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlovesV1/Pods-GlovesV1.release.xcconfig"; sourceTree = "<group>"; };
+		571EFE781DDC109F001163DD /* Assets 11-55-51-215.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets 11-55-51-215.xcassets"; sourceTree = "<group>"; };
+		571EFE7C1DDC4463001163DD /* 手写大象体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "手写大象体.ttf"; sourceTree = "<group>"; };
 		573EE3F21DD9AB6800D5D133 /* GlovesV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlovesV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		573EE3F61DD9AB6800D5D133 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
 		573EE3F81DD9AB6800D5D133 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = GlovesV1/AppDelegate.h; sourceTree = "<group>"; };
@@ -318,7 +321,6 @@
 		573EE51F1DD9AC0000D5D133 /* NetWorkingAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkingAPI.m; sourceTree = "<group>"; };
 		573EE5211DD9AC0000D5D133 /* UIImage+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Common.h"; sourceTree = "<group>"; };
 		573EE5221DD9AC0000D5D133 /* UIImage+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Common.m"; sourceTree = "<group>"; };
-		573EE53F1DD9AC0B00D5D133 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		573EE5401DD9AC0B00D5D133 /* Setting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Setting.plist; sourceTree = "<group>"; };
 		573EE5411DD9AC0B00D5D133 /* storehouse.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = storehouse.plist; sourceTree = "<group>"; };
 		573EE54A1DD9C59100D5D133 /* HomePipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePipeline.h; sourceTree = "<group>"; };
@@ -822,7 +824,8 @@
 		573EE53E1DD9AC0B00D5D133 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				573EE53F1DD9AC0B00D5D133 /* Assets.xcassets */,
+				571EFE7C1DDC4463001163DD /* 手写大象体.ttf */,
+				571EFE781DDC109F001163DD /* Assets 11-55-51-215.xcassets */,
 				573EE5401DD9AC0B00D5D133 /* Setting.plist */,
 				573EE5411DD9AC0B00D5D133 /* storehouse.plist */,
 				573EE3FE1DD9AB6800D5D133 /* Main.storyboard */,
@@ -1021,8 +1024,9 @@
 			files = (
 				573EE4051DD9AB6800D5D133 /* LaunchScreen.storyboard in Resources */,
 				573EE4D91DD9ABF200D5D133 /* MJRefresh.bundle in Resources */,
+				571EFE7D1DDC4463001163DD /* 手写大象体.ttf in Resources */,
+				571EFE791DDC109F001163DD /* Assets 11-55-51-215.xcassets in Resources */,
 				573EE4001DD9AB6800D5D133 /* Main.storyboard in Resources */,
-				573EE5421DD9AC0B00D5D133 /* Assets.xcassets in Resources */,
 				573EE5431DD9AC0B00D5D133 /* Setting.plist in Resources */,
 				573EE5441DD9AC0B00D5D133 /* storehouse.plist in Resources */,
 			);

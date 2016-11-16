@@ -29,16 +29,22 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     self.backgroundColor = [UIColor clearColor];
     self.contentView.backgroundColor = [UIColor clearColor];
-    self.size = CGSizeMake(kScreenWidth, kCellHeight);
-    self.contentView.size = self.size;
     _backView = [[UIImageView alloc]init];
+    _backView.userInteractionEnabled = YES;
     _backView.image = [UIImage imageNamed:@"background_image"];
-    _backView.size = self.size;
     _backView.layer.shadowOffset = CGSizeMake(0, 0);
     _backView.layer.shadowColor = [UIColor blackColor].CGColor;
     _backView.layer.shadowOpacity = 0.5;//阴影透明度，默认0
     _backView.layer.shadowRadius = 5;
+    _backView.bounds = self.bounds;
     [self.contentView addSubview:_backView];
+    [_backView makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.contentView.mas_top);
+        make.bottom.equalTo(self.contentView.mas_bottom);
+        make.left.equalTo(self.contentView.mas_left);
+        make.right.equalTo(self.contentView.mas_right);
+    }];
+    
     _webImageView = [YYAnimatedImageView new];
     _webImageView.size = CGSizeMake(kScreenWidth-20, kCellHeight*0.6);
     _webImageView.clipsToBounds = YES;
@@ -49,6 +55,43 @@
     _webImageView.sd_layout
     .centerXEqualToView(_backView)
     .topSpaceToView(_backView,10);
+    
+    _titleNameLabel = [[UILabel alloc]init];
+    _titleNameLabel.font = kTitleNumberFont(kSubTitleNum);
+    _titleNameLabel.textColor = kBarHightlightedColor;
+    _titleNameLabel.text = @"足球训练";
+    [_backView addSubview:_titleNameLabel];
+    
+    [_titleNameLabel makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(_backView.mas_left).offset(10);
+        make.top.equalTo(_webImageView.mas_bottom).offset(15);
+    }];
+    
+    _subTitleNameLabel = [[UILabel alloc]init];
+    _subTitleNameLabel.font = kTitleNumberFont(kContentNum);
+    _subTitleNameLabel.textColor = kBarNormalColor;
+    _subTitleNameLabel.text = @"难易系数：中等";
+    [_backView addSubview:_subTitleNameLabel];
+    
+    _detailLabel = [[UILabel alloc]init];
+    _detailLabel.font = kTitleNumberFont(kContentNum);
+    _detailLabel.textColor = kContentColor;
+    _detailLabel.numberOfLines = 0;
+    _detailLabel.text = @"利用握紧或者张开手控制球门的位置，握紧张开的速度控制球门的移动速度，让球正好射入球门";
+    [_backView addSubview:_detailLabel];
+    
+    [_detailLabel makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_subTitleNameLabel.mas_bottom).offset(10);
+        make.left.equalTo(_backView.mas_left).offset(10);
+        make.right.equalTo(_backView.mas_right).offset(-10);
+        make.bottom.equalTo(_backView.mas_bottom).offset(-10);
+    }];
+    
+    
+    [_subTitleNameLabel makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(_backView.mas_right).offset(-10);
+        make.centerY.equalTo(_titleNameLabel.mas_centerY);
+    }];
     
     _indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     _indicator.center = CGPointMake(self.width / 2, self.height / 2);
@@ -77,13 +120,6 @@
     _progressLayer.strokeStart = 0;
     _progressLayer.strokeEnd = 0;
     [_webImageView.layer addSublayer:_progressLayer];
-    
-    __weak typeof(self) _self = self;
-    UITapGestureRecognizer *g = [[UITapGestureRecognizer alloc] initWithActionBlock:^(id sender) {
-//        [_self setImageURL:_self.webImageView.imageURL];
-    }];
-    [_label addGestureRecognizer:g];
-    
     return self;
 }
 
@@ -100,7 +136,7 @@
     [CATransaction commit];
     
     [_webImageView setImageWithURL:url
-                       placeholder:nil
+                       placeholder:[UIImage imageNamed:@"home_placeholder_image"]
                            options:YYWebImageOptionProgressiveBlur | YYWebImageOptionShowNetworkActivity | YYWebImageOptionSetImageWithFadeAnimation
                           progress:^(NSInteger receivedSize, NSInteger expectedSize) {
                               if (expectedSize > 0 && receivedSize > 0) {
@@ -115,7 +151,7 @@
                                 _self.progressLayer.hidden = YES;
                                 [_self.indicator stopAnimating];
                                 _self.indicator.hidden = YES;
-                                if (!image) _self.label.hidden = NO;
+//                                if (!image) _self.label.hidden = NO;
                             }
                         }];
 }

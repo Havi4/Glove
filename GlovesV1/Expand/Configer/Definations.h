@@ -42,11 +42,12 @@
 [UIColor colorWithRed:R/255.f green:G/255.f blue:B/255.f alpha:A]
 
 //背景色定义
-#define kOrangeColor [UIColor colorWithRed:1.000 green:0.635 blue:0.333 alpha:1.00]
-#define kBackgroundColor [UIColor colorWithRed:0.118 green:0.118 blue:0.118 alpha:1.00]
-#define kCellBackColor [UIColor colorWithRed:0.173 green:0.173 blue:0.173 alpha:1.00]
-#define kIconTintColor [UIColor colorWithRed:0.980 green:0.980 blue:0.980 alpha:1.00]
-#define kContentColor [UIColor colorWithRed:0.600 green:0.600 blue:0.592 alpha:1.00]
+#define kBarNormalColor RGBA(64,62,72,1)
+#define kBarHightlightedColor RGBA(239,156,0,1)
+#define kContentColor RGBA(64,64,64,1)
 //字体定义
-#define kTitleFont [UIFont systemFontOfSize:16]
-#define kSubTitleFont [UIFont systemFontOfSize:14]
+#define kTitleNumberFont(_font) [UIFont fontWithName:@"K'aS" size:_font]
+#define kTitleNum 30//一级标题
+#define kSubTitleNum 25//二级标题
+#define kContentNum 18//正文
+#define kSubContentNum 14//下标

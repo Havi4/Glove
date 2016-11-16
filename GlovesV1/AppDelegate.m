@@ -31,6 +31,22 @@
     #pragma mark 进行广告位
     [self initAllRequestParams];
     [self setAdvertisement];
+    NSArray* familys = [UIFont familyNames];
+    
+    for (int i = 0; i<[familys count]; i++) {
+        
+        NSString* family = [familys objectAtIndex:i];
+        
+        NSLog(@"Fontfamily:%@=====",family);
+        
+        NSArray* fonts = [UIFont fontNamesForFamilyName:family];
+        
+        for (int j = 0; j<[fonts count]; j++) {
+            
+            NSLog(@"FontName:%@",[fonts objectAtIndex:j]);
+            
+        }
+    }
     return YES;
 }
 
@@ -103,8 +119,8 @@
         backgroundImage = [UIImage imageNamed:@"background_image"];
         
         textAttributes = @{
-                           NSFontAttributeName : [UIFont boldSystemFontOfSize:18],
-                           NSForegroundColorAttributeName : kIconTintColor,
+                           NSFontAttributeName : kTitleNumberFont(kTitleNum),
+                           NSForegroundColorAttributeName : kBarHightlightedColor,
                            };
     } else {
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
@@ -121,8 +137,8 @@
     [navigationBarAppearance setBackgroundImage:backgroundImage
                                   forBarMetrics:UIBarMetricsDefault];
     [navigationBarAppearance setTitleTextAttributes:textAttributes];
-    [navigationBarAppearance setBarTintColor:kIconTintColor];
-    [navigationBarAppearance setTintColor:kIconTintColor];
+    [navigationBarAppearance setBarTintColor:kBarNormalColor];
+    [navigationBarAppearance setTintColor:kBarNormalColor];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

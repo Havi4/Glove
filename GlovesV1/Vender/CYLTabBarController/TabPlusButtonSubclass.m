@@ -75,10 +75,10 @@
     [button setImage:buttonImage forState:UIControlStateNormal];
     [button setImage:[UIImage imageNamed:@"sleep_hightlight"] forState:UIControlStateSelected];
     [button setTitle:@"睡眠" forState:UIControlStateNormal];
-    [button setTitleColor:kIconTintColor forState:UIControlStateNormal];
+    [button setTitleColor:kBarNormalColor forState:UIControlStateNormal];
     
     [button setTitle:@"睡眠" forState:UIControlStateSelected];
-    [button setTitleColor:kOrangeColor forState:UIControlStateSelected];
+    [button setTitleColor:kBarHightlightedColor forState:UIControlStateSelected];
     
     button.titleLabel.font = [UIFont systemFontOfSize:9.5];
     [button sizeToFit]; // or set frame in this way `button.frame = CGRectMake(0.0, 0.0, 250, 100);`

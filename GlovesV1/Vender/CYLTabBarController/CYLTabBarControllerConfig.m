@@ -55,13 +55,13 @@
 - (NSArray *)tabBarItemsAttributesForController {
     NSDictionary *firstTabBarItemsAttributes = @{
                                                  CYLTabBarItemTitle : @"主页",
-                                                 CYLTabBarItemImage : @"report_normal",
-                                                 CYLTabBarItemSelectedImage : @"report_highlight",
+                                                 CYLTabBarItemImage : @"home_normal",
+                                                 CYLTabBarItemSelectedImage : @"home_highlight",
                                                  };
     NSDictionary *secondTabBarItemsAttributes = @{
                                                   CYLTabBarItemTitle : @"我的",
-                                                  CYLTabBarItemImage : @"device_normal",
-                                                  CYLTabBarItemSelectedImage : @"device_highlight",
+                                                  CYLTabBarItemImage : @"account_normal",
+                                                  CYLTabBarItemSelectedImage : @"account_highlight",
                                                   };
     
     NSArray *tabBarItemsAttributes = @[
@@ -84,12 +84,14 @@
     // set the text color for unselected state
     // 普通状态下的文字属性
     NSMutableDictionary *normalAttrs = [NSMutableDictionary dictionary];
-    normalAttrs[NSForegroundColorAttributeName] = kIconTintColor ;
+    normalAttrs[NSForegroundColorAttributeName] = kBarNormalColor ;
+    normalAttrs[NSFontAttributeName] = kTitleNumberFont(10);
     
     // set the text color for selected state
     // 选中状态下的文字属性
     NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
-    selectedAttrs[NSForegroundColorAttributeName] = kOrangeColor;
+    selectedAttrs[NSForegroundColorAttributeName] = kBarHightlightedColor;
+    selectedAttrs[NSFontAttributeName] = kTitleNumberFont(10);
     
     // set the text Attributes
     // 设置文字属性
@@ -109,9 +111,10 @@
     
     // set the bar shadow image
     // This shadow image attribute is ignored if the tab bar does not also have a custom background image.So at least set somthing.
-    [[UITabBar appearance] setBackgroundImage:[[UIImage alloc] init]];
-    [[UITabBar appearance] setBackgroundColor:kCellBackColor];
-    [[UITabBar appearance] setShadowImage:[UIImage imageNamed:@"tapbar_top_line"]];
+    [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tab_back_image"]];
+//    [[UITabBar appearance] setBackgroundColor:kCellBackColor];
+    
+    [[UITabBar appearance] setShadowImage:[UIImage imageWithColor:[UIColor colorWithRed:0.827 green:0.827 blue:0.827 alpha:1.00]]];
     
     // set the bar background image
     // 设置背景图片

@@ -52,7 +52,7 @@
         _timeButton.layer.cornerRadius = 25/2.0f;
         [_timeButton setClipsToBounds:YES];
         _timeButton.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.3];
-        _timeButton.titleLabel.font = [UIFont systemFontOfSize:13];
+        _timeButton.titleLabel.font = kTitleNumberFont(15);
         [_timeButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_timeButton addTarget:self action:@selector(jumpClick:) forControlEvents:UIControlEventTouchUpInside];
         [_bgImageView addSubview:_timeButton];
