@@ -28,8 +28,8 @@
 #import "UIImage+Common.h"
 #import "SDAutoLayout.h"
 #import <Realm/Realm.h>
-#import <FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.h>
 #import "BaseNavigationController.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
 #import "UIColor+FlatColors.h"
 
 #endif /* Configer_pch */

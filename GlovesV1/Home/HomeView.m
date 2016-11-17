@@ -134,7 +134,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    DeBugLog(@"slect %@",indexPath);
+    self.pipeline.selectedIndexPath = indexPath;
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {

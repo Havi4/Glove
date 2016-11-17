@@ -26,6 +26,7 @@
     #pragma mark 设置tabbar
     CYLTabBarControllerConfig *tabBarControllerConfig = [[CYLTabBarControllerConfig alloc] init];
     self.window.rootViewController = tabBarControllerConfig.tabBarController;
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     [self setUpNavigationBarAppearance];
     #pragma mark 进行广告位
@@ -139,6 +140,33 @@
     [navigationBarAppearance setTitleTextAttributes:textAttributes];
     [navigationBarAppearance setBarTintColor:kBarNormalColor];
     [navigationBarAppearance setTintColor:kBarNormalColor];
+}
+
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+{
+    UIViewController *rootViewController = [self topViewControllerWithRootViewController:window.rootViewController];
+    if (rootViewController) {
+        if ([rootViewController respondsToSelector:@selector(canRotate)]) {
+            // Unlock landscape view orientations for this view controller
+            return UIInterfaceOrientationMaskLandscapeRight;
+        }
+    }
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+- (UIViewController *)topViewControllerWithRootViewController:(UIViewController *)rootViewController
+{
+    if (rootViewController == nil) { return nil; }
+    if ([rootViewController isKindOfClass: [UITabBarController class]]) {
+        UIViewController *tab = [(UITabBarController *)rootViewController selectedViewController];
+        return [self topViewControllerWithRootViewController:tab];
+    } else if ([rootViewController isKindOfClass:[UINavigationController class]]) {
+        UIViewController *tab = [(UINavigationController *)rootViewController visibleViewController];
+        return [self topViewControllerWithRootViewController:tab];
+    } else if (rootViewController.presentedViewController != nil) {
+        return [rootViewController presentedViewController];
+    }
+    return rootViewController;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

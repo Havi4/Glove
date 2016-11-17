@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		571EFE791DDC109F001163DD /* Assets 11-55-51-215.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571EFE781DDC109F001163DD /* Assets 11-55-51-215.xcassets */; };
 		571EFE7D1DDC4463001163DD /* 手写大象体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 571EFE7C1DDC4463001163DD /* 手写大象体.ttf */; };
+		571EFE871DDD8473001163DD /* GamePipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 571EFE801DDD8473001163DD /* GamePipeline.m */; };
+		571EFE881DDD8473001163DD /* GameStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 571EFE821DDD8473001163DD /* GameStore.m */; };
+		571EFE891DDD8473001163DD /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 571EFE841DDD8473001163DD /* GameView.m */; };
+		571EFE8A1DDD8473001163DD /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571EFE861DDD8473001163DD /* GameViewController.m */; };
 		573EE3F71DD9AB6800D5D133 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE3F61DD9AB6800D5D133 /* main.m */; };
 		573EE3FA1DD9AB6800D5D133 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE3F91DD9AB6800D5D133 /* AppDelegate.m */; };
 		573EE3FD1DD9AB6800D5D133 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE3FC1DD9AB6800D5D133 /* ViewController.m */; };
@@ -136,6 +140,14 @@
 		1F095EB996A9D6D3AC430B9F /* Pods-GlovesV1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovesV1.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlovesV1/Pods-GlovesV1.release.xcconfig"; sourceTree = "<group>"; };
 		571EFE781DDC109F001163DD /* Assets 11-55-51-215.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets 11-55-51-215.xcassets"; sourceTree = "<group>"; };
 		571EFE7C1DDC4463001163DD /* 手写大象体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "手写大象体.ttf"; sourceTree = "<group>"; };
+		571EFE7F1DDD8473001163DD /* GamePipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePipeline.h; sourceTree = "<group>"; };
+		571EFE801DDD8473001163DD /* GamePipeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePipeline.m; sourceTree = "<group>"; };
+		571EFE811DDD8473001163DD /* GameStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStore.h; sourceTree = "<group>"; };
+		571EFE821DDD8473001163DD /* GameStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStore.m; sourceTree = "<group>"; };
+		571EFE831DDD8473001163DD /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
+		571EFE841DDD8473001163DD /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
+		571EFE851DDD8473001163DD /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		571EFE861DDD8473001163DD /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		573EE3F21DD9AB6800D5D133 /* GlovesV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlovesV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		573EE3F61DD9AB6800D5D133 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
 		573EE3F81DD9AB6800D5D133 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = GlovesV1/AppDelegate.h; sourceTree = "<group>"; };
@@ -385,6 +397,22 @@
 				D4DE5746400BBEC7A0817F37 /* libPods-GlovesV1.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		571EFE7E1DDD8473001163DD /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				571EFE7F1DDD8473001163DD /* GamePipeline.h */,
+				571EFE801DDD8473001163DD /* GamePipeline.m */,
+				571EFE811DDD8473001163DD /* GameStore.h */,
+				571EFE821DDD8473001163DD /* GameStore.m */,
+				571EFE831DDD8473001163DD /* GameView.h */,
+				571EFE841DDD8473001163DD /* GameView.m */,
+				571EFE851DDD8473001163DD /* GameViewController.h */,
+				571EFE861DDD8473001163DD /* GameViewController.m */,
+			);
+			name = Game;
+			path = GlovesV1/Game;
 			sourceTree = "<group>";
 		};
 		573EE3E91DD9AB6800D5D133 = {
@@ -840,6 +868,7 @@
 		573EE5451DD9ACB900D5D133 /* Glove */ = {
 			isa = PBXGroup;
 			children = (
+				571EFE7E1DDD8473001163DD /* Game */,
 				573EE5731DDC06CE00D5D133 /* Mine */,
 				573EE5491DD9C59100D5D133 /* Home */,
 				573EE5461DD9ACE100D5D133 /* AppDelegate */,
@@ -1122,7 +1151,9 @@
 				573EE4BB1DD9ABF200D5D133 /* EXTRuntimeExtensions.m in Sources */,
 				573EE4D61DD9ABF200D5D133 /* MJRefreshGifHeader.m in Sources */,
 				573EE3FA1DD9AB6800D5D133 /* AppDelegate.m in Sources */,
+				571EFE871DDD8473001163DD /* GamePipeline.m in Sources */,
 				573EE5391DD9AC0000D5D133 /* WeatherModel.m in Sources */,
+				571EFE881DDD8473001163DD /* GameStore.m in Sources */,
 				573EE52B1DD9AC0000D5D133 /* AssessmentListModel.m in Sources */,
 				573EE5251DD9AC0000D5D133 /* NSObject+Common.m in Sources */,
 				573EE4CA1DD9ABF200D5D133 /* UIView+MIPipeline.m in Sources */,
@@ -1150,6 +1181,7 @@
 				573EE5651DD9C5E800D5D133 /* BaseNavigationController.m in Sources */,
 				573EE4B51DD9ABF200D5D133 /* NSObject+MIDealloc.m in Sources */,
 				573EE52E1DD9AC0000D5D133 /* FriendDeviceListModel.m in Sources */,
+				571EFE891DDD8473001163DD /* GameView.m in Sources */,
 				573EE4B31DD9ABF200D5D133 /* IanAdsStartView.m in Sources */,
 				573EE5371DD9AC0000D5D133 /* TagListModel.m in Sources */,
 				573EE4C61DD9ABF200D5D133 /* MIService.m in Sources */,
@@ -1158,6 +1190,7 @@
 				573EE5341DD9AC0000D5D133 /* ServerTimeModel.m in Sources */,
 				573EE4CD1DD9ABF200D5D133 /* MJRefreshComponent.m in Sources */,
 				573EE5231DD9AC0000D5D133 /* BaseTableViewCell.m in Sources */,
+				571EFE8A1DDD8473001163DD /* GameViewController.m in Sources */,
 				573EE4AD1DD9ABF200D5D133 /* CYLTabBarController.m in Sources */,
 				573EE4AB1DD9ABF200D5D133 /* CYLPlusButton.m in Sources */,
 				573EE4BE1DD9ABF200D5D133 /* EXTSelectorChecking.m in Sources */,
@@ -1349,6 +1382,7 @@
 				DEVELOPMENT_TEAM = CF99UB3L46;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GlovesV1/Expand/Configer/Configer.pch";
 				INFOPLIST_FILE = GlovesV1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ihotkeys.ihotkeys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1363,6 +1397,7 @@
 				DEVELOPMENT_TEAM = CF99UB3L46;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GlovesV1/Expand/Configer/Configer.pch";
 				INFOPLIST_FILE = GlovesV1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ihotkeys.ihotkeys;
 				PRODUCT_NAME = "$(TARGET_NAME)";

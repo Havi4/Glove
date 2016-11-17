@@ -10,4 +10,6 @@
 
 @interface CYNavigationViewController : UINavigationController
 
+@property (nonatomic, assign) BOOL supportLandscape;
+
 @end

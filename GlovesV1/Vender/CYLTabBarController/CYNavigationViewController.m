@@ -7,12 +7,14 @@
 //
 
 #import "CYNavigationViewController.h"
+#import "GameViewController.h"
 
 @interface CYNavigationViewController ()
 
 @end
 
 @implementation CYNavigationViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

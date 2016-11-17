@@ -35,6 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  from the store layer as need by yourself.
  */
 @interface MIViewController : UIViewController
+@property (nonatomic, strong) UIImageView *backImageView;
 
 @property (nonatomic, strong, readonly, nonnull) id<MIStore> store;          //!< Store for the business logic
 
