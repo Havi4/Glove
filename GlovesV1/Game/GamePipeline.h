@@ -10,4 +10,8 @@
 
 @interface GamePipeline : MIPipeline
 
+// Flag data
+@property (nonatomic, assign) BOOL jsAlertShow;
+
+
 @end

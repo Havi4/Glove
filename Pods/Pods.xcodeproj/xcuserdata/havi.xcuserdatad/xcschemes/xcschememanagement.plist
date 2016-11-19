@@ -14,7 +14,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JSONKit-NoWarning.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>NSDictionary+Accessors.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -34,7 +44,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>UIView+Positioning.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>VBFPopFlatButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>WBWebViewConsole.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,7 +72,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>08935C8FFBDB973666EDF91F45CE5381</key>
+		<key>153298C28F171DAB34506507A8E1A36C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1B62C3085022A04F33187013E40010CB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +87,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4AD5AAD0D627E5F09E23A5A27274588A</key>
+		<key>37CC435DC424033AA380103FDF0A3513</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4251CA1E7C727547CE173DA7A8FE68A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +102,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8678409D07066D85F7FDD5EE58A1C536</key>
+		<key>553854D52EBE085F76E99DCDD20D467B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5CE973B003BEC903A736D34AA24CF909</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8A60A3964CC8E5A943642AE07B0D5506</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,17 +122,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C16ABD404EAF0ABC1E3B4EC3A783D025</key>
+		<key>DE34ED396272B523AC867158BF0C0491</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DAF6AF932D681422484B4695DB269FCA</key>
+		<key>F5A2396206A8DC908580332724E62077</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FBBB3409F41825CC6276BA818A1C3C3A</key>
+		<key>FFE1AC80FEB72C15F9DA8ACCE0E60CC1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

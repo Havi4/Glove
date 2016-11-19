@@ -13,6 +13,7 @@
 		571EFE881DDD8473001163DD /* GameStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 571EFE821DDD8473001163DD /* GameStore.m */; };
 		571EFE891DDD8473001163DD /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 571EFE841DDD8473001163DD /* GameView.m */; };
 		571EFE8A1DDD8473001163DD /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571EFE861DDD8473001163DD /* GameViewController.m */; };
+		571EFE8F1DDDBC80001163DD /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571EFE8E1DDDBC80001163DD /* WebKit.framework */; };
 		573EE3F71DD9AB6800D5D133 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE3F61DD9AB6800D5D133 /* main.m */; };
 		573EE3FA1DD9AB6800D5D133 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE3F91DD9AB6800D5D133 /* AppDelegate.m */; };
 		573EE3FD1DD9AB6800D5D133 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE3FC1DD9AB6800D5D133 /* ViewController.m */; };
@@ -148,6 +149,7 @@
 		571EFE841DDD8473001163DD /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
 		571EFE851DDD8473001163DD /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		571EFE861DDD8473001163DD /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		571EFE8E1DDDBC80001163DD /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		573EE3F21DD9AB6800D5D133 /* GlovesV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlovesV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		573EE3F61DD9AB6800D5D133 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
 		573EE3F81DD9AB6800D5D133 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = GlovesV1/AppDelegate.h; sourceTree = "<group>"; };
@@ -370,6 +372,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				571EFE8F1DDDBC80001163DD /* WebKit.framework in Frameworks */,
 				FDA76DD272DE3207140B18CC /* libPods-GlovesV1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +397,7 @@
 		0D38CEDE77F476FB5BC911A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				571EFE8E1DDDBC80001163DD /* WebKit.framework */,
 				D4DE5746400BBEC7A0817F37 /* libPods-GlovesV1.a */,
 			);
 			name = Frameworks;
