@@ -14,6 +14,7 @@
 @property (nonatomic, strong) UserInfoDetailModel *userInfo;
 // Flag data
 @property (nonatomic, assign) BOOL flagRequestFinished;
+@property (nonatomic, strong) NSString *gameUrl;
 
 // Input data
 @property (nonatomic, assign) NSUInteger inputSelectedPhotoIndex;
@@ -26,6 +27,6 @@
 // Context data
 // In general, context data is calculate property. They can be calculated
 // from other property.
-@property (nonatomic, strong, readonly) NSDictionary *contextForDetail;
+@property (nonatomic, strong, readonly) NSDictionary *controllerSetting;
 
 @end

@@ -36,7 +36,7 @@
         @strongify(self)
         NSIndexPath *indexPath = newValue;
         MIScene *gameScene = [MIScene sceneWithView:@"GameView" controller:@"GameViewController" store:@"GameStore"];
-        UIViewController *gameViewController = [[MIMediator sharedMediator] viewControllerWithScene:gameScene context:nil];
+        UIViewController *gameViewController = [[MIMediator sharedMediator] viewControllerWithScene:gameScene context:self.pipeline.controllerSetting];
         [self.navigationController pushViewController:gameViewController animated:YES];
         DeBugLog(@"选中了section %ld ,cell %ld",(long)indexPath.section,(long)indexPath.row);
     }];

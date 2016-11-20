@@ -14,6 +14,8 @@
 		571EFE891DDD8473001163DD /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 571EFE841DDD8473001163DD /* GameView.m */; };
 		571EFE8A1DDD8473001163DD /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571EFE861DDD8473001163DD /* GameViewController.m */; };
 		571EFE8F1DDDBC80001163DD /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571EFE8E1DDDBC80001163DD /* WebKit.framework */; };
+		571EFEA61DE0C5DE001163DD /* football_preview.gif in Resources */ = {isa = PBXBuildFile; fileRef = 571EFEA51DE0C5DE001163DD /* football_preview.gif */; };
+		571EFEA81DE0C828001163DD /* Games.plist in Resources */ = {isa = PBXBuildFile; fileRef = 571EFEA71DE0C828001163DD /* Games.plist */; };
 		573EE3F71DD9AB6800D5D133 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE3F61DD9AB6800D5D133 /* main.m */; };
 		573EE3FA1DD9AB6800D5D133 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE3F91DD9AB6800D5D133 /* AppDelegate.m */; };
 		573EE3FD1DD9AB6800D5D133 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE3FC1DD9AB6800D5D133 /* ViewController.m */; };
@@ -150,6 +152,8 @@
 		571EFE851DDD8473001163DD /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		571EFE861DDD8473001163DD /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		571EFE8E1DDDBC80001163DD /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		571EFEA51DE0C5DE001163DD /* football_preview.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = football_preview.gif; sourceTree = "<group>"; };
+		571EFEA71DE0C828001163DD /* Games.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Games.plist; sourceTree = "<group>"; };
 		573EE3F21DD9AB6800D5D133 /* GlovesV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlovesV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		573EE3F61DD9AB6800D5D133 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
 		573EE3F81DD9AB6800D5D133 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = GlovesV1/AppDelegate.h; sourceTree = "<group>"; };
@@ -857,8 +861,10 @@
 			isa = PBXGroup;
 			children = (
 				571EFE7C1DDC4463001163DD /* 手写大象体.ttf */,
+				571EFEA51DE0C5DE001163DD /* football_preview.gif */,
 				571EFE781DDC109F001163DD /* Assets 11-55-51-215.xcassets */,
 				573EE5401DD9AC0B00D5D133 /* Setting.plist */,
+				571EFEA71DE0C828001163DD /* Games.plist */,
 				573EE5411DD9AC0B00D5D133 /* storehouse.plist */,
 				573EE3FE1DD9AB6800D5D133 /* Main.storyboard */,
 				573EE4031DD9AB6800D5D133 /* LaunchScreen.storyboard */,
@@ -1055,10 +1061,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				571EFEA81DE0C828001163DD /* Games.plist in Resources */,
 				573EE4051DD9AB6800D5D133 /* LaunchScreen.storyboard in Resources */,
 				573EE4D91DD9ABF200D5D133 /* MJRefresh.bundle in Resources */,
 				571EFE7D1DDC4463001163DD /* 手写大象体.ttf in Resources */,
 				571EFE791DDC109F001163DD /* Assets 11-55-51-215.xcassets in Resources */,
+				571EFEA61DE0C5DE001163DD /* football_preview.gif in Resources */,
 				573EE4001DD9AB6800D5D133 /* Main.storyboard in Resources */,
 				573EE5431DD9AC0B00D5D133 /* Setting.plist in Resources */,
 				573EE5441DD9AC0B00D5D133 /* storehouse.plist in Resources */,

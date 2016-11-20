@@ -10,4 +10,9 @@
 
 @implementation HomePipeline
 
+- (NSDictionary *)controllerSetting
+{
+    return @{@"gameUrl": self.gameUrl ?: @""};
+}
+
 @end

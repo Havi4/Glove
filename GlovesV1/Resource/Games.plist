@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>gameName</key>
+		<string>足球训练</string>
+		<key>gameDetail</key>
+		<string>利用握紧或者张开手控制球门的位置，握紧张开的速度控制球门的移动速度，让球正好射入球门</string>
+		<key>gameLevel</key>
+		<string>难度系数：初级</string>
+		<key>gamePreview</key>
+		<string>http://lizitong.ren/MD_H5/football/images/football_preview.gif</string>
+		<key>gameUrl</key>
+		<string>http://lizitong.ren/MD_H5/football</string>
+	</dict>
+	<dict>
+		<key>gameName</key>
+		<string>Flappy Bird</string>
+		<key>gameDetail</key>
+		<string>控制小鸟躲过障碍</string>
+		<key>gameLevel</key>
+		<string>高级</string>
+		<key>gamePreview</key>
+		<string>http://lizitong.ren/MD_H5/flappybird/assets/bird_preview.gif</string>
+		<key>gameUrl</key>
+		<string>http://lizitong.ren/MD_H5/flappybird</string>
+	</dict>
+	<dict>
+		<key>gameName</key>
+		<string>推箱子</string>
+		<key>gameDetail</key>
+		<string>将箱子推到指定位置</string>
+		<key>gameLevel</key>
+		<string>难度系数：中级</string>
+		<key>gamePreview</key>
+		<string>http://lizitong.ren/MD_H5/football/images/football_preview.gif</string>
+		<key>gameUrl</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>gameName</key>
+		<string>爬山坡</string>
+		<key>gameDetail</key>
+		<string>利用握紧或者张开手控制球门的位置，握紧张开的速度控制球门的移动速度，让球正好射入球门</string>
+		<key>gameLevel</key>
+		<string>难度系数：初级</string>
+		<key>gamePreview</key>
+		<string>http://lizitong.ren/MD_H5/football/images/football_preview.gif</string>
+		<key>gameUrl</key>
+		<string></string>
+	</dict>
+</array>
+</plist>

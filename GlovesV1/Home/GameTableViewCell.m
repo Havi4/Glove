@@ -51,15 +51,17 @@
     _webImageView.contentMode = UIViewContentModeScaleAspectFill;
     _webImageView.backgroundColor = [UIColor lightGrayColor];
     [_backView addSubview:_webImageView];
-    
-    _webImageView.sd_layout
-    .centerXEqualToView(_backView)
-    .topSpaceToView(_backView,10);
+    [_webImageView makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(_backView.mas_centerX);
+        make.top.equalTo(_backView.mas_top).offset(10);
+        make.width.equalTo(@(kScreenWidth-20));
+        make.height.equalTo(@(kCellHeight*0.6));
+    }];
     
     _titleNameLabel = [[UILabel alloc]init];
     _titleNameLabel.font = kTitleNumberFont(kSubTitleNum);
     _titleNameLabel.textColor = kBarHightlightedColor;
-    _titleNameLabel.text = @"足球训练";
+    _titleNameLabel.text = @"";
     [_backView addSubview:_titleNameLabel];
     
     [_titleNameLabel makeConstraints:^(MASConstraintMaker *make) {
@@ -70,14 +72,14 @@
     _subTitleNameLabel = [[UILabel alloc]init];
     _subTitleNameLabel.font = kTitleNumberFont(kContentNum);
     _subTitleNameLabel.textColor = kBarNormalColor;
-    _subTitleNameLabel.text = @"难易系数：中等";
+    _subTitleNameLabel.text = @"";
     [_backView addSubview:_subTitleNameLabel];
     
     _detailLabel = [[UILabel alloc]init];
     _detailLabel.font = kTitleNumberFont(kContentNum);
     _detailLabel.textColor = kContentColor;
     _detailLabel.numberOfLines = 0;
-    _detailLabel.text = @"利用握紧或者张开手控制球门的位置，握紧张开的速度控制球门的移动速度，让球正好射入球门";
+    _detailLabel.text = @"";
     [_backView addSubview:_detailLabel];
     
     [_detailLabel makeConstraints:^(MASConstraintMaker *make) {
@@ -158,7 +160,10 @@
 
 - (void)configCell:(id)info
 {
-    
+    NSDictionary *gameSetting = info;
+    _titleNameLabel.text = [gameSetting objectForKey:@"gameName"];
+    _subTitleNameLabel.text = [gameSetting objectForKey:@"gameLevel"];
+    _detailLabel.text = [gameSetting objectForKey:@"gameDetail"];
 }
 
 @end

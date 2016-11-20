@@ -13,5 +13,8 @@
 // Flag data
 @property (nonatomic, assign) BOOL jsAlertShow;
 
+@property (nonatomic, strong) NSString *gameUrl;
+
+@property (nonatomic, assign) BOOL isUrlDone;
 
 @end

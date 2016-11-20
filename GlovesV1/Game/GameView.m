@@ -14,6 +14,7 @@
 @interface GameView ()<WKUIDelegate,WKNavigationDelegate,WKScriptMessageHandler>
 
 @property (nonatomic, strong) GamePipeline *pipeline;
+@property (nonatomic, strong) WKWebView *webView;
 @property (nonatomic, strong) UIButton *button;
 @property (nonatomic, strong) UIView *naviBarView;
 @property (nonatomic, assign) BOOL isShowNavi;
@@ -34,14 +35,15 @@
 {
     NSNotificationCenter *nc = [NSNotificationCenter defaultCenter]; //Get the notification centre for the app
     [nc addObserver:self selector:@selector(orientationChanged:) name:UIDeviceOrientationDidChangeNotification  object:nil];
-    WKWebView *webView = [[WKWebView alloc] initWithFrame:CGRectMake(0,0, kScreenSize.height, kScreenSize.width)];
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://lizitong.ren/MD_H5/football"]]];
-    webView.UIDelegate = self;
-    webView.navigationDelegate = self;
-    webView.scrollView.showsHorizontalScrollIndicator = NO;
-    webView.scrollView.showsVerticalScrollIndicator = NO;
-    [[webView configuration].userContentController addScriptMessageHandler:self name:@"closeMe"];
-    [self addSubview:webView];
+    self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(0,0, kScreenSize.height, kScreenSize.width)];
+//
+    _webView.UIDelegate = self;
+    _webView.navigationDelegate = self;
+    _webView.scrollView.showsHorizontalScrollIndicator = NO;
+    _webView.scrollView.showsVerticalScrollIndicator = NO;
+    _webView.scrollView.scrollEnabled = NO;
+    [[_webView configuration].userContentController addScriptMessageHandler:self name:@"closeMe"];
+    [self addSubview:_webView];
     [self configWebView];
     self.naviBarView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenSize.height, 44)];
     self.naviBarView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"navi_lanscpe_back"]];
@@ -54,7 +56,11 @@
     [backButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [backButton addTarget:self action:@selector(backHome:) forControlEvents:UIControlEventTouchUpInside];
     [self.naviBarView addSubview:backButton];
-    self.isShowNavi = YES;
+    [UIView animateWithDuration:0.5 delay:2 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        self.naviBarView.alpha = 0;
+    } completion:^(BOOL finished) {
+        self.isShowNavi = NO;
+    }];
 }
 
 //OC在JS调用方法做的处理
@@ -66,6 +72,15 @@
             self.naviBarView.alpha = 1;
         } completion:^(BOOL finished) {
             self.isShowNavi = YES;
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                if (self.isShowNavi) {
+                    [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                        self.naviBarView.alpha = 0;
+                    } completion:^(BOOL finished) {
+                        self.isShowNavi = NO;
+                    }];
+                }
+            });
         }];
 
     }else{
@@ -135,6 +150,11 @@
 
 - (void)setupPipeline:(__kindof MIPipeline *)pipeline {
     self.pipeline = pipeline;
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.pipeline.gameUrl]]];
+//    @weakify(self)
+//    [MIObserve(self.pipeline, gameUrl) changed:^(id  _Nonnull newValue) {
+//        @strongify(self)
+//    }];
 }
 
 @end

@@ -23,14 +23,14 @@
     self = [super initWithContext:context];
     
     if (self) {
-        
+        self.gamePipeline.gameUrl = [context objectForKey:@"gameUrl"];
     }
     
     return self;
 }
 
 - (void)fetchData {
-    
+    self.gamePipeline.isUrlDone = YES;
 }
 
 - (__kindof MIPipeline *)pipeline {
