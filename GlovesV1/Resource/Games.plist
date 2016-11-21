@@ -20,7 +20,7 @@
 		<key>gameDetail</key>
 		<string>控制小鸟躲过障碍</string>
 		<key>gameLevel</key>
-		<string>高级</string>
+		<string>难度系数：高级</string>
 		<key>gamePreview</key>
 		<string>http://lizitong.ren/MD_H5/flappybird/assets/bird_preview.gif</string>
 		<key>gameUrl</key>
