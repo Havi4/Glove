@@ -8,23 +8,6 @@
 
 #ifndef ModelHeader_h
 
-#import "ServerTimeModel.h"
-#import "AddUserModel.h"
-#import "UserInfoDetailModel.h"
-#import "FriendListModel.h"
-#import "BeingRequestModel.h"
-#import "TagListModel.h"
-#import "SensorInfoModel.h"
-#import "MyDeviceListModel.h"
-#import "GlobalModel.h"
-#import "SensorDataModel.h"
-#import "SleepQualityModel.h"
-#import "AllDeviceModel.h"
-#import "AssessmentListModel.h"
-#import "WeatherModel.h"
-#import "ArticleModel.h"
-#import "AccessTockenModel.h"
-
 #define ModelHeader_h
 
 

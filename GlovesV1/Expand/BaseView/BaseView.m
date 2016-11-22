@@ -23,6 +23,7 @@
     UIImageView *backImageView = [[UIImageView alloc]initWithFrame:self.frame];
     backImageView.image = [UIImage imageNamed:@"background_image"];
     [self addSubview:backImageView];
+    
 }
 
 /*

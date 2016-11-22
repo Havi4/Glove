@@ -11,7 +11,9 @@
 @interface HomePipeline : MIPipeline
 
 // Normal data
-@property (nonatomic, strong) UserInfoDetailModel *userInfo;
+
+@property(strong,nonatomic)CBPeripheral *currPeripheral;
+
 // Flag data
 @property (nonatomic, assign) BOOL flagRequestFinished;
 @property (nonatomic, strong) NSString *gameUrl;
@@ -28,5 +30,7 @@
 // In general, context data is calculate property. They can be calculated
 // from other property.
 @property (nonatomic, strong, readonly) NSDictionary *controllerSetting;
+
+@property (nonatomic, copy) void (^showCalibrationAlert)(NSInteger i);
 
 @end

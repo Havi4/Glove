@@ -52,13 +52,13 @@ typedef NetDownloadProgress HYBPostProgress;
 - (void)cancelRequestWithURL:(NSString *)url;
 
 #pragma mark 业务需求
-//获取服务器时间
-- (void)requestServerTimeWithBlock:(void (^)(ServerTimeModel *serVerTime))success fail:(void (^)(NSError *error))fail;
-
-//请求accessTocken
-- (void)requestAccessTockenWithParams:(NSDictionary *)params withBlock:(void (^)(AccessTockenModel *serVerTime , NSError *error))blcok;
-
-//获取用户信息
-
-- (void)requestUserInfoWithParam:(NSDictionary *)params andBlock:(void (^)(UserInfoDetailModel *userInfo))success fail:(void (^)(NSError *error))fail;
+////获取服务器时间
+//- (void)requestServerTimeWithBlock:(void (^)(ServerTimeModel *serVerTime))success fail:(void (^)(NSError *error))fail;
+//
+////请求accessTocken
+//- (void)requestAccessTockenWithParams:(NSDictionary *)params withBlock:(void (^)(AccessTockenModel *serVerTime , NSError *error))blcok;
+//
+////获取用户信息
+//
+//- (void)requestUserInfoWithParam:(NSDictionary *)params andBlock:(void (^)(UserInfoDetailModel *userInfo))success fail:(void (^)(NSError *error))fail;
 @end

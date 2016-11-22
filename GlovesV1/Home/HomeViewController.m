@@ -10,6 +10,7 @@
 #import "HomePipeline.h"
 #import "Minya.h"
 #import "GameViewController.h"
+#import "CYNavigationViewController.h"
 
 @interface HomeViewController ()
 
@@ -23,6 +24,28 @@
     [super viewDidLoad];
     // Add you own code
     self.title = @"训练";
+}
+    
+- (void)viewDidAppear:(BOOL)animated
+{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self checkBluetooth];
+    });
+}
+    
+- (void)checkBluetooth{
+    if (!currPeripheral) {
+        self.pipeline.showCalibrationAlert = ^(NSInteger i){
+            DeBugLog(@"获取到蓝牙设备");
+        };
+        MIScene *radarScene = [MIScene sceneWithView:@"RadarView" controller:@"RadarViewController" store:@"RadarStore"];
+        UIViewController *radarViewController = [[MIMediator sharedMediator] viewControllerWithScene:radarScene context:self.pipeline.controllerSetting];
+        CYNavigationViewController *radarNavigationController = [[CYNavigationViewController alloc]
+                                                      initWithRootViewController:radarViewController];
+        [self presentViewController:radarNavigationController animated:YES completion:^{
+            
+        }];
+    }
 }
 
 - (void)setupPipeline:(__kindof MIPipeline *)pipeline {
@@ -38,14 +61,8 @@
         MIScene *gameScene = [MIScene sceneWithView:@"GameView" controller:@"GameViewController" store:@"GameStore"];
         UIViewController *gameViewController = [[MIMediator sharedMediator] viewControllerWithScene:gameScene context:self.pipeline.controllerSetting];
         [self.navigationController pushViewController:gameViewController animated:YES];
-        DeBugLog(@"选中了section %ld ,cell %ld",(long)indexPath.section,(long)indexPath.row);
     }];
-    /*
-     [MIObserve(self.pipeline, mContentOffset) changed:^(id _Nonnull newValue) {
-     @strongify(self)
-     [self navigationBarGradualChangeWithScrollViewContent:self.pipeline.mContentOffset offset:kScaleLength(190.5) color:KC01_57c2de];
-     }];
-     */
+    
 }
 
 @end

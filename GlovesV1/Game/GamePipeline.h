@@ -12,6 +12,10 @@
 
 // Flag data
 @property (nonatomic, assign) BOOL jsAlertShow;
+    
+@property (nonatomic, strong) BabyBluetooth *babyBluetooth;
+
+@property(strong,nonatomic)CBPeripheral *currPeripheral;
 
 @property (nonatomic, strong) NSString *gameUrl;
 

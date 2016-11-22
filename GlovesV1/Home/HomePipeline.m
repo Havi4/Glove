@@ -12,7 +12,12 @@
 
 - (NSDictionary *)controllerSetting
 {
-    return @{@"gameUrl": self.gameUrl ?: @""};
+    return @{
+             @"gameUrl": self.gameUrl ?: @"",
+             @"currPeripheral":self.currPeripheral?:@"",
+             @"alertBlock":self.showCalibrationAlert,
+             };
 }
+    
 
 @end

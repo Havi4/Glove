@@ -24,6 +24,8 @@
     
     if (self) {
         self.gamePipeline.gameUrl = [context objectForKey:@"gameUrl"];
+        self.gamePipeline.babyBluetooth = [context objectForKey:@"bluetooth"];
+        self.gamePipeline.currPeripheral = [context objectForKey:@"currPeripheral"];
     }
     
     return self;

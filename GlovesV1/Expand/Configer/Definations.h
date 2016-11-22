@@ -46,8 +46,9 @@
 #define kBarHightlightedColor RGBA(239,156,0,1)
 #define kContentColor RGBA(64,64,64,1)
 //字体定义
-#define kTitleNumberFont(_font) [UIFont fontWithName:@"K'aS" size:_font]
-#define kTitleNum 30//一级标题
-#define kSubTitleNum 25//二级标题
-#define kContentNum 18//正文
-#define kSubContentNum 14//下标
+//#define kTitleNumberFont(_font) [UIFont fontWithName:@"K'aS" size:_font]
+#define kTitleNumberFont(_font) [UIFont systemFontOfSize:_font]
+#define kTitleNum 18//一级标题
+#define kSubTitleNum 15//二级标题
+#define kContentNum 14//正文
+#define kSubContentNum 13//下标

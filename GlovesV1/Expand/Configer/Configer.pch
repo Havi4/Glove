@@ -21,7 +21,6 @@
 #import "NSObject+Common.h"
 #import "HYBNetworking.h"
 #import "NetWorkingAPI.h"
-#import "BaseModel.h"
 #import "Minya.h"
 #import <Masonry/Masonry.h>
 #import "ModelHeader.h"
@@ -31,5 +30,9 @@
 #import "BaseNavigationController.h"
 #import "UINavigationController+FDFullscreenPopGesture.h"
 #import "UIColor+FlatColors.h"
+#import "BabyBluetooth.h"
+#import "SVProgressHUD.h"
+#import "Global.h"
+#import "NSNumber+Common.h"
 
 #endif /* Configer_pch */

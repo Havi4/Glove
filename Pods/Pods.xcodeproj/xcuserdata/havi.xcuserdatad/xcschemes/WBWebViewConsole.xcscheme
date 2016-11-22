@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8A60A3964CC8E5A943642AE07B0D5506'
+               BlueprintIdentifier = 'B41C33CA7E9BB1C609B0A1F0C27CD16D'
                BlueprintName = 'WBWebViewConsole'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libWBWebViewConsole.a'>

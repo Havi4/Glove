@@ -9,5 +9,12 @@
 #import "MIViewController.h"
 
 @interface GameViewController : MIViewController
+{
+    @public
+    BabyBluetooth *baby;
+}
 
+@property __block NSMutableArray *services;
+@property(strong,nonatomic)CBPeripheral *currPeripheral;
+    
 @end

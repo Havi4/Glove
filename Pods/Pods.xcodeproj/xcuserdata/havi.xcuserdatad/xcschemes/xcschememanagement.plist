@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>BabyBluetooth.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FDFullscreenPopGesture.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -39,7 +44,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SCLAlertView-Objective-C.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SVProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -72,7 +87,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>00B17C695C275931C0528679249572FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>153298C28F171DAB34506507A8E1A36C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1958ACEBCD9DFAE8B8240D003EB81EA2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,12 +112,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>37CC435DC424033AA380103FDF0A3513</key>
+		<key>2CEE852F8EF84CB7E9B8C714970CB433</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4251CA1E7C727547CE173DA7A8FE68A7</key>
+		<key>4569A487598E4F3DDDDEF5BD97F1E712</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,17 +127,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>553854D52EBE085F76E99DCDD20D467B</key>
+		<key>5A8FBF165DC57A704BDA25BDB0A825D7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5CE973B003BEC903A736D34AA24CF909</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8A60A3964CC8E5A943642AE07B0D5506</key>
+		<key>600E734E6F9B9E69C340D053EE092E5B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,17 +142,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DE34ED396272B523AC867158BF0C0491</key>
+		<key>AAA7A5553CDABBBC25486DD4E522537F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F5A2396206A8DC908580332724E62077</key>
+		<key>B12E0C3CDF17DC16BF80FDC50A7331B8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FFE1AC80FEB72C15F9DA8ACCE0E60CC1</key>
+		<key>B2B716B5658F0DDCC7A16AFE6F835C94</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B41C33CA7E9BB1C609B0A1F0C27CD16D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C9BCFE94FCCF0D5899F34D41FB46A05B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
