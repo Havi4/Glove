@@ -11,6 +11,7 @@
 #import "Minya.h"
 #import "GameViewController.h"
 #import "CYNavigationViewController.h"
+#import "SCLAlertView.h"
 
 @interface HomeViewController ()
 
@@ -29,14 +30,19 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self checkBluetooth];
+        [self checkBluetooth:nil];
     });
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"雷达" style:UIBarButtonItemStylePlain target:self action:@selector(checkBluetooth:)];
+
 }
-    
-- (void)checkBluetooth{
-    if (!currPeripheral) {
+
+- (void)checkBluetooth:(id)sender{
+    if (!currPeripheral || sender) {
+        @weakify(self);
         self.pipeline.showCalibrationAlert = ^(NSInteger i){
             DeBugLog(@"获取到蓝牙设备");
+            @strongify(self);
+            [self showSuccess:nil];
         };
         MIScene *radarScene = [MIScene sceneWithView:@"RadarView" controller:@"RadarViewController" store:@"RadarStore"];
         UIViewController *radarViewController = [[MIMediator sharedMediator] viewControllerWithScene:radarScene context:self.pipeline.controllerSetting];
@@ -50,6 +56,19 @@
 
 - (void)setupPipeline:(__kindof MIPipeline *)pipeline {
     self.pipeline = pipeline;
+}
+
+- (void)showSuccess:(id)sender
+{
+    SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
+
+    [alert addButton:@"校准手套" actionBlock:^(void) {
+        NSLog(@"Second button tapped");
+    }];
+
+    alert.soundURL = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/right_answer.mp3", [NSBundle mainBundle].resourcePath]];
+
+    [alert showSuccess:@"提示" subTitle:@"蓝牙设备已连接" closeButtonTitle:@"开始训练" duration:0.0f];
 }
 
 - (void)addObservers {

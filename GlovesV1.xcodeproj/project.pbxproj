@@ -114,6 +114,11 @@
 		57A46A071DE4218B00F186BA /* NSNumber+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A46A061DE4218B00F186BA /* NSNumber+Common.m */; };
 		57A46A0F1DE44A9700F186BA /* UITableView+CYLTableViewPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A46A0C1DE44A9700F186BA /* UITableView+CYLTableViewPlaceHolder.m */; };
 		57A46A101DE44A9700F186BA /* WeChatStylePlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A46A0E1DE44A9700F186BA /* WeChatStylePlaceHolder.m */; };
+		57A46A121DE47E4200F186BA /* right_answer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 57A46A111DE47E4200F186BA /* right_answer.mp3 */; };
+		57A46A1C1DE480A600F186BA /* ValidatePipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A46A151DE480A600F186BA /* ValidatePipeline.m */; };
+		57A46A1D1DE480A600F186BA /* ValidateStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A46A171DE480A600F186BA /* ValidateStore.m */; };
+		57A46A1E1DE480A600F186BA /* ValidateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A46A191DE480A600F186BA /* ValidateView.m */; };
+		57A46A1F1DE480A600F186BA /* ValidateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A46A1B1DE480A600F186BA /* ValidateViewController.m */; };
 		FDA76DD272DE3207140B18CC /* libPods-GlovesV1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DE5746400BBEC7A0817F37 /* libPods-GlovesV1.a */; };
 /* End PBXBuildFile section */
 
@@ -353,6 +358,15 @@
 		57A46A0C1DE44A9700F186BA /* UITableView+CYLTableViewPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CYLTableViewPlaceHolder.m"; sourceTree = "<group>"; };
 		57A46A0D1DE44A9700F186BA /* WeChatStylePlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatStylePlaceHolder.h; sourceTree = "<group>"; };
 		57A46A0E1DE44A9700F186BA /* WeChatStylePlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatStylePlaceHolder.m; sourceTree = "<group>"; };
+		57A46A111DE47E4200F186BA /* right_answer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = right_answer.mp3; sourceTree = "<group>"; };
+		57A46A141DE480A600F186BA /* ValidatePipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidatePipeline.h; sourceTree = "<group>"; };
+		57A46A151DE480A600F186BA /* ValidatePipeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidatePipeline.m; sourceTree = "<group>"; };
+		57A46A161DE480A600F186BA /* ValidateStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidateStore.h; sourceTree = "<group>"; };
+		57A46A171DE480A600F186BA /* ValidateStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidateStore.m; sourceTree = "<group>"; };
+		57A46A181DE480A600F186BA /* ValidateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidateView.h; sourceTree = "<group>"; };
+		57A46A191DE480A600F186BA /* ValidateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidateView.m; sourceTree = "<group>"; };
+		57A46A1A1DE480A600F186BA /* ValidateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidateViewController.h; sourceTree = "<group>"; };
+		57A46A1B1DE480A600F186BA /* ValidateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidateViewController.m; sourceTree = "<group>"; };
 		A43B8ED08EF840EB48ED6479 /* Pods-GlovesV1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovesV1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GlovesV1/Pods-GlovesV1.debug.xcconfig"; sourceTree = "<group>"; };
 		D4DE5746400BBEC7A0817F37 /* libPods-GlovesV1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GlovesV1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -818,6 +832,7 @@
 		573EE53E1DD9AC0B00D5D133 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				57A46A111DE47E4200F186BA /* right_answer.mp3 */,
 				571EFE7C1DDC4463001163DD /* 手写大象体.ttf */,
 				571EFEA51DE0C5DE001163DD /* football_preview.gif */,
 				571EFE781DDC109F001163DD /* Assets 11-55-51-215.xcassets */,
@@ -836,6 +851,7 @@
 		573EE5451DD9ACB900D5D133 /* Glove */ = {
 			isa = PBXGroup;
 			children = (
+				57A46A131DE480A600F186BA /* Validate */,
 				57A469E31DE3E57800F186BA /* Radar */,
 				571EFE7E1DDD8473001163DD /* Game */,
 				573EE5731DDC06CE00D5D133 /* Mine */,
@@ -943,6 +959,22 @@
 				57A46A0E1DE44A9700F186BA /* WeChatStylePlaceHolder.m */,
 			);
 			path = CYLTableViewPlaceHolder;
+			sourceTree = "<group>";
+		};
+		57A46A131DE480A600F186BA /* Validate */ = {
+			isa = PBXGroup;
+			children = (
+				57A46A141DE480A600F186BA /* ValidatePipeline.h */,
+				57A46A151DE480A600F186BA /* ValidatePipeline.m */,
+				57A46A161DE480A600F186BA /* ValidateStore.h */,
+				57A46A171DE480A600F186BA /* ValidateStore.m */,
+				57A46A181DE480A600F186BA /* ValidateView.h */,
+				57A46A191DE480A600F186BA /* ValidateView.m */,
+				57A46A1A1DE480A600F186BA /* ValidateViewController.h */,
+				57A46A1B1DE480A600F186BA /* ValidateViewController.m */,
+			);
+			name = Validate;
+			path = GlovesV1/Validate;
 			sourceTree = "<group>";
 		};
 		DA9680D35D19C603649C9E8F /* Pods */ = {
@@ -1071,6 +1103,7 @@
 				571EFE791DDC109F001163DD /* Assets 11-55-51-215.xcassets in Resources */,
 				571EFEA61DE0C5DE001163DD /* football_preview.gif in Resources */,
 				573EE4001DD9AB6800D5D133 /* Main.storyboard in Resources */,
+				57A46A121DE47E4200F186BA /* right_answer.mp3 in Resources */,
 				573EE5431DD9AC0B00D5D133 /* Setting.plist in Resources */,
 				573EE5441DD9AC0B00D5D133 /* storehouse.plist in Resources */,
 			);
@@ -1146,6 +1179,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				573EE4B71DD9ABF200D5D133 /* NSObject+MISwizzle.m in Sources */,
+				57A46A1D1DE480A600F186BA /* ValidateStore.m in Sources */,
+				57A46A1F1DE480A600F186BA /* ValidateViewController.m in Sources */,
 				573EE4AE1DD9ABF200D5D133 /* CYLTabBarControllerConfig.m in Sources */,
 				573EE4B91DD9ABF200D5D133 /* EXTConcreteProtocol.m in Sources */,
 				573EE5531DD9C59100D5D133 /* HomeStore.m in Sources */,
@@ -1186,6 +1221,7 @@
 				573EE5541DD9C59100D5D133 /* HomeView.m in Sources */,
 				573EE4D01DD9ABF200D5D133 /* MJRefreshAutoGifFooter.m in Sources */,
 				573EE4C71DD9ABF200D5D133 /* MIStorage.m in Sources */,
+				57A46A1E1DE480A600F186BA /* ValidateView.m in Sources */,
 				573EE5651DD9C5E800D5D133 /* BaseNavigationController.m in Sources */,
 				573EE4B51DD9ABF200D5D133 /* NSObject+MIDealloc.m in Sources */,
 				57A469FD1DE40AFA00F186BA /* XHRadarPointView.m in Sources */,
@@ -1218,6 +1254,7 @@
 				573EE4BF1DD9ABF200D5D133 /* NSInvocation+EXT.m in Sources */,
 				573EE4DF1DD9ABF200D5D133 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				573EE4AC1DD9ABF200D5D133 /* CYLTabBar.m in Sources */,
+				57A46A1C1DE480A600F186BA /* ValidatePipeline.m in Sources */,
 				573EE4CF1DD9ABF200D5D133 /* MJRefreshHeader.m in Sources */,
 				573EE5521DD9C59100D5D133 /* HomePipeline.m in Sources */,
 				573EE4D51DD9ABF200D5D133 /* MJRefreshBackStateFooter.m in Sources */,

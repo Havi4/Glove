@@ -14,7 +14,7 @@
 {
     return @{
              @"gameUrl": self.gameUrl ?: @"",
-             @"currPeripheral":self.currPeripheral?:@"",
+             @"currPeripheral":currPeripheral?:@"",
              @"alertBlock":self.showCalibrationAlert,
              };
 }

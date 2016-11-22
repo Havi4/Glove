@@ -22,7 +22,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Add you own  code
-//    WKWebView *web = [];
     self.navigationController.navigationBar.hidden = YES;
     NSNotificationCenter *nc = [NSNotificationCenter defaultCenter]; //Get the notification centre for the app
     [nc addObserver:self selector:@selector(orientationChanged:) name:UIDeviceOrientationDidChangeNotification  object:nil];
@@ -87,12 +86,7 @@
             
         }];
     }];
-    /*
-     [MIObserve(self.pipeline, mContentOffset) changed:^(id _Nonnull newValue) {
-     @strongify(self)
-     [self navigationBarGradualChangeWithScrollViewContent:self.pipeline.mContentOffset offset:kScaleLength(190.5) color:KC01_57c2de];
-     }];
-     */
+    
 }
 
 

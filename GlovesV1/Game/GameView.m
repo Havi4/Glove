@@ -153,10 +153,10 @@
 - (void)setupPipeline:(__kindof MIPipeline *)pipeline {
     self.pipeline = pipeline;
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.pipeline.gameUrl]]];
-//    [self babyDelegate];
+    [self babyDelegate];
     
     //开始扫描设备
-//    [self performSelector:@selector(loadData) withObject:nil afterDelay:2];
+    [self performSelector:@selector(loadData) withObject:nil afterDelay:2];
     [SVProgressHUD showInfoWithStatus:@"准备连接设备"];
     [NSTimer scheduledTimerWithTimeInterval:1.5 repeats:YES block:^(NSTimer * _Nonnull timer) {
         int y = [self getRandomNumber:0 to:370];
@@ -278,7 +278,7 @@
 -(void)setNotifiy:(id)service{
     NSLog(@"===服务名词 name:%@",[service characteristics]);
     @weakify(self);
-    if(self.pipeline.currPeripheral.state != CBPeripheralStateConnected) {
+    if(currPeripheral.state != CBPeripheralStateConnected) {
         [SVProgressHUD showErrorWithStatus:@"peripheral已经断开连接，请重新连接"];
         return;
     }
@@ -286,7 +286,7 @@
         CBCharacteristic *characteristic = [[service characteristics]objectAtIndex:0];
         [self.pipeline.currPeripheral setNotifyValue:YES forCharacteristic:characteristic];
         [self.pipeline.babyBluetooth
-                  notify:self.pipeline.currPeripheral
+                  notify:currPeripheral
           characteristic:characteristic
                    block:^(CBPeripheral *peripheral, CBCharacteristic *characteristics, NSError *error) {
                    NSString *new = [[NSString alloc] initWithData:characteristics.value encoding:NSUTF8StringEncoding];
@@ -307,14 +307,15 @@
 {
     NSString *jsMethod = [NSString stringWithFormat:@"getBluetoothValue(%@)",value];
     [self.webView evaluateJavaScript:jsMethod completionHandler:^(id _Nullable response, NSError * _Nullable error) {
-        NSLog(@"js错误%@ %@",response,error);
+        if (error) {
+            DeBugLog(@"js错误%@ %@",response,error);
+        }
     }];
 }
 
 -(void)loadData{
     [SVProgressHUD showInfoWithStatus:@"开始连接设备"];
-    self.pipeline.babyBluetooth.having(self.pipeline.currPeripheral).and.channel(channelOnPeropheralView).then.connectToPeripherals().discoverServices().discoverCharacteristics().readValueForCharacteristic().discoverDescriptorsForCharacteristic().readValueForDescriptors().begin();
-    //    baby.connectToPeripheral(self.currPeripheral).begin();
+    self.pipeline.babyBluetooth.having(currPeripheral).and.channel(channelOnPeropheralView).then.connectToPeripherals().discoverServices().discoverCharacteristics().readValueForCharacteristic().discoverDescriptorsForCharacteristic().readValueForDescriptors().begin();
 }
 
 @end
