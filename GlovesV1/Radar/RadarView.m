@@ -57,7 +57,7 @@
         [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
             self.radarListView.frame = (CGRect){15,64+kScreenSize.height,kScreenSize.width-30,kScreenSize.height-64-140};
         } completion:^(BOOL finished) {
-            self.pipeline.babyBluetooth.scanForPeripherals().begin().stop(10);
+            self.pipeline.babyBluetooth.scanForPeripherals().begin().stop(kRadarScanTime);
         }];
     };
     [self addSubview:_radarListView];
@@ -69,7 +69,7 @@
     self.pipeline = pipeline;
     [self.radarView scan];
     [self babyDelegate];
-    self.pipeline.babyBluetooth.scanForPeripherals().begin().stop(10);
+    self.pipeline.babyBluetooth.scanForPeripherals().begin().stop(kRadarScanTime);
     @weakify(self);
     [MIObserve(self.pipeline, scanAgain) changed:^(id  _Nonnull newValue) {
         @strongify(self);
@@ -79,7 +79,7 @@
         [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
             self.radarListView.frame = (CGRect){15,64+kScreenSize.height,kScreenSize.width-30,kScreenSize.height-64-140};
         } completion:^(BOOL finished) {
-            self.pipeline.babyBluetooth.scanForPeripherals().begin().stop(10);
+            self.pipeline.babyBluetooth.scanForPeripherals().begin().stop(kRadarScanTime);
         }];
     }];
 }

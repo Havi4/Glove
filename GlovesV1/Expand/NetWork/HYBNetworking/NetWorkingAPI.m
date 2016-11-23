@@ -125,17 +125,17 @@ static NetWorkingAPI *_netWorkClient;
 //    }];
 //}
 //
-////获取用户信息
-//- (void)requestUserInfoWithParam:(NSDictionary *)params andBlock:(void (^)(UserInfoDetailModel *userInfo))success fail:(void (^)(NSError *error))fail
-//{
-//    NSString *aPath = @"v1/user/UserInfo";
-//    [HYBNetworking getWithUrl:aPath refreshCache:YES params:params success:^(id response) {
-//        NSDictionary *dic = (NSDictionary *)response;
-//        UserInfoDetailModel *userInfoModel = [UserInfoDetailModel modelWithDictionary:dic];
-//        success(userInfoModel);
-//    } fail:^(NSError *error) {
-//        fail(error);
-//    }];
-//}
+//获取用户信息
+- (void)requestUserInfoWithParam:(NSDictionary *)params andBlock:(void (^)(UserInfoDetailModel *userInfo))success fail:(void (^)(NSError *error))fail
+{
+    NSString *aPath = @"v1/user/UserInfo";
+    [HYBNetworking getWithUrl:aPath refreshCache:YES params:params success:^(id response) {
+        NSDictionary *dic = (NSDictionary *)response;
+        UserInfoDetailModel *userInfoModel = [UserInfoDetailModel modelWithDictionary:dic];
+        success(userInfoModel);
+    } fail:^(NSError *error) {
+        fail(error);
+    }];
+}
 
 @end

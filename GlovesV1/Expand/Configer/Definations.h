@@ -52,3 +52,5 @@
 #define kSubTitleNum 15//二级标题
 #define kContentNum 14//正文
 #define kSubContentNum 13//下标
+
+#define kRadarScanTime 4

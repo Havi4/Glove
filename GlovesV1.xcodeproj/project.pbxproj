@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		571EFE791DDC109F001163DD /* Assets 11-55-51-215.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571EFE781DDC109F001163DD /* Assets 11-55-51-215.xcassets */; };
+		571EFE791DDC109F001163DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571EFE781DDC109F001163DD /* Assets.xcassets */; };
 		571EFE7D1DDC4463001163DD /* 手写大象体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 571EFE7C1DDC4463001163DD /* 手写大象体.ttf */; };
 		571EFE871DDD8473001163DD /* GamePipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 571EFE801DDD8473001163DD /* GamePipeline.m */; };
 		571EFE881DDD8473001163DD /* GameStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 571EFE821DDD8473001163DD /* GameStore.m */; };
 		571EFE891DDD8473001163DD /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 571EFE841DDD8473001163DD /* GameView.m */; };
 		571EFE8A1DDD8473001163DD /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571EFE861DDD8473001163DD /* GameViewController.m */; };
 		571EFE8F1DDDBC80001163DD /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571EFE8E1DDDBC80001163DD /* WebKit.framework */; };
-		571EFEA61DE0C5DE001163DD /* football_preview.gif in Resources */ = {isa = PBXBuildFile; fileRef = 571EFEA51DE0C5DE001163DD /* football_preview.gif */; };
 		571EFEA81DE0C828001163DD /* Games.plist in Resources */ = {isa = PBXBuildFile; fileRef = 571EFEA71DE0C828001163DD /* Games.plist */; };
 		573EE3F71DD9AB6800D5D133 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE3F61DD9AB6800D5D133 /* main.m */; };
 		573EE3FA1DD9AB6800D5D133 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE3F91DD9AB6800D5D133 /* AppDelegate.m */; };
@@ -96,10 +95,6 @@
 		573EE56B1DDAEC3300D5D133 /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE56A1DDAEC3300D5D133 /* UIColor+FlatColors.m */; };
 		573EE56E1DDB139C00D5D133 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE56D1DDB139C00D5D133 /* BaseView.m */; };
 		573EE5721DDB6A5400D5D133 /* GameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE5711DDB6A5400D5D133 /* GameTableViewCell.m */; };
-		573EE5851DDC06CE00D5D133 /* MinePipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE5751DDC06CE00D5D133 /* MinePipeline.m */; };
-		573EE5861DDC06CE00D5D133 /* MineStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE5771DDC06CE00D5D133 /* MineStore.m */; };
-		573EE5871DDC06CE00D5D133 /* MineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE5791DDC06CE00D5D133 /* MineView.m */; };
-		573EE5881DDC06CE00D5D133 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE57B1DDC06CE00D5D133 /* MineViewController.m */; };
 		57A469EC1DE3E57800F186BA /* RadarPipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A469E51DE3E57800F186BA /* RadarPipeline.m */; };
 		57A469ED1DE3E57800F186BA /* RadarStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A469E71DE3E57800F186BA /* RadarStore.m */; };
 		57A469EE1DE3E57800F186BA /* RadarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A469E91DE3E57800F186BA /* RadarView.m */; };
@@ -119,6 +114,23 @@
 		57A46A1D1DE480A600F186BA /* ValidateStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A46A171DE480A600F186BA /* ValidateStore.m */; };
 		57A46A1E1DE480A600F186BA /* ValidateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A46A191DE480A600F186BA /* ValidateView.m */; };
 		57A46A1F1DE480A600F186BA /* ValidateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A46A1B1DE480A600F186BA /* ValidateViewController.m */; };
+		57A4E2541DE56A4900427AA4 /* GloveBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4E2531DE56A4900427AA4 /* GloveBackView.m */; };
+		57A4E2571DE57B4A00427AA4 /* FingerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4E2561DE57B4A00427AA4 /* FingerView.m */; };
+		57A4E25A1DE5BF3A00427AA4 /* FingerSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4E2591DE5BF3A00427AA4 /* FingerSubView.m */; };
+		57A4E2731DE5D7DC00427AA4 /* MineHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4E25C1DE5D7DC00427AA4 /* MineHeaderTableViewCell.m */; };
+		57A4E2741DE5D7DC00427AA4 /* MinePipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4E25E1DE5D7DC00427AA4 /* MinePipeline.m */; };
+		57A4E2751DE5D7DC00427AA4 /* MineReuseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4E2601DE5D7DC00427AA4 /* MineReuseTableViewCell.m */; };
+		57A4E2761DE5D7DC00427AA4 /* MineService.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4E2621DE5D7DC00427AA4 /* MineService.m */; };
+		57A4E2771DE5D7DC00427AA4 /* MineStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4E2641DE5D7DC00427AA4 /* MineStore.m */; };
+		57A4E2781DE5D7DC00427AA4 /* MineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4E2661DE5D7DC00427AA4 /* MineView.m */; };
+		57A4E2791DE5D7DC00427AA4 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4E2681DE5D7DC00427AA4 /* MineViewController.m */; };
+		57A4E27A1DE5D7DC00427AA4 /* MineWeatherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4E26A1DE5D7DC00427AA4 /* MineWeatherTableViewCell.m */; };
+		57A4E27B1DE5D7DC00427AA4 /* SettingPipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4E26C1DE5D7DC00427AA4 /* SettingPipeline.m */; };
+		57A4E27C1DE5D7DC00427AA4 /* SettingStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4E26E1DE5D7DC00427AA4 /* SettingStore.m */; };
+		57A4E27D1DE5D7DC00427AA4 /* SettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4E2701DE5D7DC00427AA4 /* SettingView.m */; };
+		57A4E27E1DE5D7DC00427AA4 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4E2721DE5D7DC00427AA4 /* SettingViewController.m */; };
+		57A4E2831DE5D82A00427AA4 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4E2801DE5D82A00427AA4 /* BaseModel.m */; };
+		57A4E2841DE5D82A00427AA4 /* UserInfoDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4E2821DE5D82A00427AA4 /* UserInfoDetailModel.m */; };
 		FDA76DD272DE3207140B18CC /* libPods-GlovesV1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DE5746400BBEC7A0817F37 /* libPods-GlovesV1.a */; };
 /* End PBXBuildFile section */
 
@@ -141,7 +153,7 @@
 
 /* Begin PBXFileReference section */
 		1F095EB996A9D6D3AC430B9F /* Pods-GlovesV1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovesV1.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlovesV1/Pods-GlovesV1.release.xcconfig"; sourceTree = "<group>"; };
-		571EFE781DDC109F001163DD /* Assets 11-55-51-215.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets 11-55-51-215.xcassets"; sourceTree = "<group>"; };
+		571EFE781DDC109F001163DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		571EFE7C1DDC4463001163DD /* 手写大象体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "手写大象体.ttf"; sourceTree = "<group>"; };
 		571EFE7F1DDD8473001163DD /* GamePipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePipeline.h; sourceTree = "<group>"; };
 		571EFE801DDD8473001163DD /* GamePipeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePipeline.m; sourceTree = "<group>"; };
@@ -152,7 +164,6 @@
 		571EFE851DDD8473001163DD /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		571EFE861DDD8473001163DD /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		571EFE8E1DDDBC80001163DD /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		571EFEA51DE0C5DE001163DD /* football_preview.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = football_preview.gif; sourceTree = "<group>"; };
 		571EFEA71DE0C828001163DD /* Games.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Games.plist; sourceTree = "<group>"; };
 		573EE3F21DD9AB6800D5D133 /* GlovesV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlovesV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		573EE3F61DD9AB6800D5D133 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
@@ -321,14 +332,6 @@
 		573EE56D1DDB139C00D5D133 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		573EE5701DDB6A5400D5D133 /* GameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTableViewCell.h; sourceTree = "<group>"; };
 		573EE5711DDB6A5400D5D133 /* GameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTableViewCell.m; sourceTree = "<group>"; };
-		573EE5741DDC06CE00D5D133 /* MinePipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinePipeline.h; sourceTree = "<group>"; };
-		573EE5751DDC06CE00D5D133 /* MinePipeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinePipeline.m; sourceTree = "<group>"; };
-		573EE5761DDC06CE00D5D133 /* MineStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineStore.h; sourceTree = "<group>"; };
-		573EE5771DDC06CE00D5D133 /* MineStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineStore.m; sourceTree = "<group>"; };
-		573EE5781DDC06CE00D5D133 /* MineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineView.h; sourceTree = "<group>"; };
-		573EE5791DDC06CE00D5D133 /* MineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineView.m; sourceTree = "<group>"; };
-		573EE57A1DDC06CE00D5D133 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
-		573EE57B1DDC06CE00D5D133 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		57A469E41DE3E57800F186BA /* RadarPipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadarPipeline.h; sourceTree = "<group>"; };
 		57A469E51DE3E57800F186BA /* RadarPipeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadarPipeline.m; sourceTree = "<group>"; };
 		57A469E61DE3E57800F186BA /* RadarStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadarStore.h; sourceTree = "<group>"; };
@@ -367,6 +370,40 @@
 		57A46A191DE480A600F186BA /* ValidateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidateView.m; sourceTree = "<group>"; };
 		57A46A1A1DE480A600F186BA /* ValidateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidateViewController.h; sourceTree = "<group>"; };
 		57A46A1B1DE480A600F186BA /* ValidateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidateViewController.m; sourceTree = "<group>"; };
+		57A4E2521DE56A4900427AA4 /* GloveBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GloveBackView.h; sourceTree = "<group>"; };
+		57A4E2531DE56A4900427AA4 /* GloveBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GloveBackView.m; sourceTree = "<group>"; };
+		57A4E2551DE57B4A00427AA4 /* FingerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FingerView.h; sourceTree = "<group>"; };
+		57A4E2561DE57B4A00427AA4 /* FingerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FingerView.m; sourceTree = "<group>"; };
+		57A4E2581DE5BF3A00427AA4 /* FingerSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FingerSubView.h; sourceTree = "<group>"; };
+		57A4E2591DE5BF3A00427AA4 /* FingerSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FingerSubView.m; sourceTree = "<group>"; };
+		57A4E25B1DE5D7DC00427AA4 /* MineHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHeaderTableViewCell.h; sourceTree = "<group>"; };
+		57A4E25C1DE5D7DC00427AA4 /* MineHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHeaderTableViewCell.m; sourceTree = "<group>"; };
+		57A4E25D1DE5D7DC00427AA4 /* MinePipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinePipeline.h; sourceTree = "<group>"; };
+		57A4E25E1DE5D7DC00427AA4 /* MinePipeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinePipeline.m; sourceTree = "<group>"; };
+		57A4E25F1DE5D7DC00427AA4 /* MineReuseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineReuseTableViewCell.h; sourceTree = "<group>"; };
+		57A4E2601DE5D7DC00427AA4 /* MineReuseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineReuseTableViewCell.m; sourceTree = "<group>"; };
+		57A4E2611DE5D7DC00427AA4 /* MineService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineService.h; sourceTree = "<group>"; };
+		57A4E2621DE5D7DC00427AA4 /* MineService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineService.m; sourceTree = "<group>"; };
+		57A4E2631DE5D7DC00427AA4 /* MineStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineStore.h; sourceTree = "<group>"; };
+		57A4E2641DE5D7DC00427AA4 /* MineStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineStore.m; sourceTree = "<group>"; };
+		57A4E2651DE5D7DC00427AA4 /* MineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineView.h; sourceTree = "<group>"; };
+		57A4E2661DE5D7DC00427AA4 /* MineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineView.m; sourceTree = "<group>"; };
+		57A4E2671DE5D7DC00427AA4 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		57A4E2681DE5D7DC00427AA4 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		57A4E2691DE5D7DC00427AA4 /* MineWeatherTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineWeatherTableViewCell.h; sourceTree = "<group>"; };
+		57A4E26A1DE5D7DC00427AA4 /* MineWeatherTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineWeatherTableViewCell.m; sourceTree = "<group>"; };
+		57A4E26B1DE5D7DC00427AA4 /* SettingPipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingPipeline.h; sourceTree = "<group>"; };
+		57A4E26C1DE5D7DC00427AA4 /* SettingPipeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingPipeline.m; sourceTree = "<group>"; };
+		57A4E26D1DE5D7DC00427AA4 /* SettingStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingStore.h; sourceTree = "<group>"; };
+		57A4E26E1DE5D7DC00427AA4 /* SettingStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingStore.m; sourceTree = "<group>"; };
+		57A4E26F1DE5D7DC00427AA4 /* SettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingView.h; sourceTree = "<group>"; };
+		57A4E2701DE5D7DC00427AA4 /* SettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingView.m; sourceTree = "<group>"; };
+		57A4E2711DE5D7DC00427AA4 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		57A4E2721DE5D7DC00427AA4 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		57A4E27F1DE5D82A00427AA4 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		57A4E2801DE5D82A00427AA4 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		57A4E2811DE5D82A00427AA4 /* UserInfoDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoDetailModel.h; sourceTree = "<group>"; };
+		57A4E2821DE5D82A00427AA4 /* UserInfoDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoDetailModel.m; sourceTree = "<group>"; };
 		A43B8ED08EF840EB48ED6479 /* Pods-GlovesV1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovesV1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GlovesV1/Pods-GlovesV1.debug.xcconfig"; sourceTree = "<group>"; };
 		D4DE5746400BBEC7A0817F37 /* libPods-GlovesV1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GlovesV1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -792,6 +829,10 @@
 			children = (
 				57A46A021DE41D8200F186BA /* BluetoothModel.h */,
 				57A46A031DE41D8200F186BA /* BluetoothModel.m */,
+				57A4E27F1DE5D82A00427AA4 /* BaseModel.h */,
+				57A4E2801DE5D82A00427AA4 /* BaseModel.m */,
+				57A4E2811DE5D82A00427AA4 /* UserInfoDetailModel.h */,
+				57A4E2821DE5D82A00427AA4 /* UserInfoDetailModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -834,8 +875,7 @@
 			children = (
 				57A46A111DE47E4200F186BA /* right_answer.mp3 */,
 				571EFE7C1DDC4463001163DD /* 手写大象体.ttf */,
-				571EFEA51DE0C5DE001163DD /* football_preview.gif */,
-				571EFE781DDC109F001163DD /* Assets 11-55-51-215.xcassets */,
+				571EFE781DDC109F001163DD /* Assets.xcassets */,
 				573EE5401DD9AC0B00D5D133 /* Setting.plist */,
 				571EFEA71DE0C828001163DD /* Games.plist */,
 				573EE5411DD9AC0B00D5D133 /* storehouse.plist */,
@@ -904,14 +944,30 @@
 		573EE5731DDC06CE00D5D133 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				573EE5741DDC06CE00D5D133 /* MinePipeline.h */,
-				573EE5751DDC06CE00D5D133 /* MinePipeline.m */,
-				573EE5761DDC06CE00D5D133 /* MineStore.h */,
-				573EE5771DDC06CE00D5D133 /* MineStore.m */,
-				573EE5781DDC06CE00D5D133 /* MineView.h */,
-				573EE5791DDC06CE00D5D133 /* MineView.m */,
-				573EE57A1DDC06CE00D5D133 /* MineViewController.h */,
-				573EE57B1DDC06CE00D5D133 /* MineViewController.m */,
+				57A4E25B1DE5D7DC00427AA4 /* MineHeaderTableViewCell.h */,
+				57A4E25C1DE5D7DC00427AA4 /* MineHeaderTableViewCell.m */,
+				57A4E25D1DE5D7DC00427AA4 /* MinePipeline.h */,
+				57A4E25E1DE5D7DC00427AA4 /* MinePipeline.m */,
+				57A4E25F1DE5D7DC00427AA4 /* MineReuseTableViewCell.h */,
+				57A4E2601DE5D7DC00427AA4 /* MineReuseTableViewCell.m */,
+				57A4E2611DE5D7DC00427AA4 /* MineService.h */,
+				57A4E2621DE5D7DC00427AA4 /* MineService.m */,
+				57A4E2631DE5D7DC00427AA4 /* MineStore.h */,
+				57A4E2641DE5D7DC00427AA4 /* MineStore.m */,
+				57A4E2651DE5D7DC00427AA4 /* MineView.h */,
+				57A4E2661DE5D7DC00427AA4 /* MineView.m */,
+				57A4E2671DE5D7DC00427AA4 /* MineViewController.h */,
+				57A4E2681DE5D7DC00427AA4 /* MineViewController.m */,
+				57A4E2691DE5D7DC00427AA4 /* MineWeatherTableViewCell.h */,
+				57A4E26A1DE5D7DC00427AA4 /* MineWeatherTableViewCell.m */,
+				57A4E26B1DE5D7DC00427AA4 /* SettingPipeline.h */,
+				57A4E26C1DE5D7DC00427AA4 /* SettingPipeline.m */,
+				57A4E26D1DE5D7DC00427AA4 /* SettingStore.h */,
+				57A4E26E1DE5D7DC00427AA4 /* SettingStore.m */,
+				57A4E26F1DE5D7DC00427AA4 /* SettingView.h */,
+				57A4E2701DE5D7DC00427AA4 /* SettingView.m */,
+				57A4E2711DE5D7DC00427AA4 /* SettingViewController.h */,
+				57A4E2721DE5D7DC00427AA4 /* SettingViewController.m */,
 			);
 			name = Mine;
 			path = GlovesV1/Mine;
@@ -970,6 +1026,12 @@
 				57A46A171DE480A600F186BA /* ValidateStore.m */,
 				57A46A181DE480A600F186BA /* ValidateView.h */,
 				57A46A191DE480A600F186BA /* ValidateView.m */,
+				57A4E2521DE56A4900427AA4 /* GloveBackView.h */,
+				57A4E2531DE56A4900427AA4 /* GloveBackView.m */,
+				57A4E2551DE57B4A00427AA4 /* FingerView.h */,
+				57A4E2561DE57B4A00427AA4 /* FingerView.m */,
+				57A4E2581DE5BF3A00427AA4 /* FingerSubView.h */,
+				57A4E2591DE5BF3A00427AA4 /* FingerSubView.m */,
 				57A46A1A1DE480A600F186BA /* ValidateViewController.h */,
 				57A46A1B1DE480A600F186BA /* ValidateViewController.m */,
 			);
@@ -1100,8 +1162,7 @@
 				573EE4051DD9AB6800D5D133 /* LaunchScreen.storyboard in Resources */,
 				573EE4D91DD9ABF200D5D133 /* MJRefresh.bundle in Resources */,
 				571EFE7D1DDC4463001163DD /* 手写大象体.ttf in Resources */,
-				571EFE791DDC109F001163DD /* Assets 11-55-51-215.xcassets in Resources */,
-				571EFEA61DE0C5DE001163DD /* football_preview.gif in Resources */,
+				571EFE791DDC109F001163DD /* Assets.xcassets in Resources */,
 				573EE4001DD9AB6800D5D133 /* Main.storyboard in Resources */,
 				57A46A121DE47E4200F186BA /* right_answer.mp3 in Resources */,
 				573EE5431DD9AC0B00D5D133 /* Setting.plist in Resources */,
@@ -1183,13 +1244,19 @@
 				57A46A1F1DE480A600F186BA /* ValidateViewController.m in Sources */,
 				573EE4AE1DD9ABF200D5D133 /* CYLTabBarControllerConfig.m in Sources */,
 				573EE4B91DD9ABF200D5D133 /* EXTConcreteProtocol.m in Sources */,
+				57A4E2731DE5D7DC00427AA4 /* MineHeaderTableViewCell.m in Sources */,
 				573EE5531DD9C59100D5D133 /* HomeStore.m in Sources */,
+				57A4E27C1DE5D7DC00427AA4 /* SettingStore.m in Sources */,
 				573EE3FD1DD9AB6800D5D133 /* ViewController.m in Sources */,
 				573EE4B61DD9ABF200D5D133 /* NSObject+MIKVO.m in Sources */,
+				57A4E2761DE5D7DC00427AA4 /* MineService.m in Sources */,
+				57A4E2771DE5D7DC00427AA4 /* MineStore.m in Sources */,
 				57A469ED1DE3E57800F186BA /* RadarStore.m in Sources */,
 				573EE4D11DD9ABF200D5D133 /* MJRefreshAutoNormalFooter.m in Sources */,
+				57A4E27E1DE5D7DC00427AA4 /* SettingViewController.m in Sources */,
 				573EE4AF1DD9ABF200D5D133 /* CYNavigationViewController.m in Sources */,
 				573EE4C31DD9ABF200D5D133 /* MIMediator.m in Sources */,
+				57A4E2791DE5D7DC00427AA4 /* MineViewController.m in Sources */,
 				573EE4BC1DD9ABF200D5D133 /* EXTSafeCategory.m in Sources */,
 				573EE4D81DD9ABF200D5D133 /* MJRefreshStateHeader.m in Sources */,
 				573EE5721DDB6A5400D5D133 /* GameTableViewCell.m in Sources */,
@@ -1203,11 +1270,12 @@
 				571EFE871DDD8473001163DD /* GamePipeline.m in Sources */,
 				571EFE881DDD8473001163DD /* GameStore.m in Sources */,
 				573EE5251DD9AC0000D5D133 /* NSObject+Common.m in Sources */,
+				57A4E27A1DE5D7DC00427AA4 /* MineWeatherTableViewCell.m in Sources */,
+				57A4E2571DE57B4A00427AA4 /* FingerView.m in Sources */,
 				573EE4CA1DD9ABF200D5D133 /* UIView+MIPipeline.m in Sources */,
 				573EE4B81DD9ABF200D5D133 /* EXTADT.m in Sources */,
 				573EE4C01DD9ABF200D5D133 /* NSMethodSignature+EXT.m in Sources */,
 				573EE4D41DD9ABF200D5D133 /* MJRefreshBackNormalFooter.m in Sources */,
-				573EE5861DDC06CE00D5D133 /* MineStore.m in Sources */,
 				57A469EF1DE3E57800F186BA /* RadarViewController.m in Sources */,
 				573EE4BD1DD9ABF200D5D133 /* EXTScope.m in Sources */,
 				573EE4C81DD9ABF200D5D133 /* MIStore.m in Sources */,
@@ -1215,9 +1283,11 @@
 				573EE4CC1DD9ABF200D5D133 /* MJRefreshBackFooter.m in Sources */,
 				573EE4B11DD9ABF200D5D133 /* UIViewController+CYLTabBarControllerExtention.m in Sources */,
 				573EE4B41DD9ABF200D5D133 /* IanClickImageView.m in Sources */,
+				57A4E2781DE5D7DC00427AA4 /* MineView.m in Sources */,
 				573EE5551DD9C59100D5D133 /* HomeViewController.m in Sources */,
 				573EE4DA1DD9ABF200D5D133 /* MJRefreshConst.m in Sources */,
 				573EE4C21DD9ABF200D5D133 /* README.md in Sources */,
+				57A4E27B1DE5D7DC00427AA4 /* SettingPipeline.m in Sources */,
 				573EE5541DD9C59100D5D133 /* HomeView.m in Sources */,
 				573EE4D01DD9ABF200D5D133 /* MJRefreshAutoGifFooter.m in Sources */,
 				573EE4C71DD9ABF200D5D133 /* MIStorage.m in Sources */,
@@ -1227,7 +1297,9 @@
 				57A469FD1DE40AFA00F186BA /* XHRadarPointView.m in Sources */,
 				571EFE891DDD8473001163DD /* GameView.m in Sources */,
 				573EE4B31DD9ABF200D5D133 /* IanAdsStartView.m in Sources */,
+				57A4E2831DE5D82A00427AA4 /* BaseModel.m in Sources */,
 				573EE4C61DD9ABF200D5D133 /* MIService.m in Sources */,
+				57A4E25A1DE5BF3A00427AA4 /* FingerSubView.m in Sources */,
 				57A46A101DE44A9700F186BA /* WeChatStylePlaceHolder.m in Sources */,
 				573EE4D31DD9ABF200D5D133 /* MJRefreshBackGifFooter.m in Sources */,
 				57A46A0F1DE44A9700F186BA /* UITableView+CYLTableViewPlaceHolder.m in Sources */,
@@ -1240,11 +1312,13 @@
 				573EE4AB1DD9ABF200D5D133 /* CYLPlusButton.m in Sources */,
 				573EE4BE1DD9ABF200D5D133 /* EXTSelectorChecking.m in Sources */,
 				573EE5681DDAE9A600D5D133 /* PopListButton.m in Sources */,
+				57A4E2541DE56A4900427AA4 /* GloveBackView.m in Sources */,
 				573EE4C51DD9ABF200D5D133 /* MIScene.m in Sources */,
 				573EE53D1DD9AC0000D5D133 /* UIImage+Common.m in Sources */,
 				573EE4C91DD9ABF200D5D133 /* MIViewController.m in Sources */,
 				573EE4B21DD9ABF200D5D133 /* GetLaunchImage.m in Sources */,
 				573EE4B01DD9ABF200D5D133 /* TabPlusButtonSubclass.m in Sources */,
+				57A4E27D1DE5D7DC00427AA4 /* SettingView.m in Sources */,
 				573EE5261DD9AC0000D5D133 /* UIViewController+SQExtension.m in Sources */,
 				573EE4DD1DD9ABF200D5D133 /* UIScrollView+MJRefresh.m in Sources */,
 				573EE5241DD9AC0000D5D133 /* RefreshHeader.m in Sources */,
@@ -1262,19 +1336,19 @@
 				573EE4D71DD9ABF200D5D133 /* MJRefreshNormalHeader.m in Sources */,
 				57A469F21DE3E61D00F186BA /* Global.m in Sources */,
 				573EE3F71DD9AB6800D5D133 /* main.m in Sources */,
+				57A4E2751DE5D7DC00427AA4 /* MineReuseTableViewCell.m in Sources */,
 				573EE4E01DD9ABF200D5D133 /* UIView+SDAutoLayout.m in Sources */,
+				57A4E2741DE5D7DC00427AA4 /* MinePipeline.m in Sources */,
+				57A4E2841DE5D82A00427AA4 /* UserInfoDetailModel.m in Sources */,
 				57A469EC1DE3E57800F186BA /* RadarPipeline.m in Sources */,
 				573EE4DE1DD9ABF200D5D133 /* UIView+MJExtension.m in Sources */,
 				573EE4C41DD9ABF200D5D133 /* MIPipeline.m in Sources */,
 				573EE53C1DD9AC0000D5D133 /* NetWorkingAPI.m in Sources */,
-				573EE5881DDC06CE00D5D133 /* MineViewController.m in Sources */,
 				57A469FC1DE40AFA00F186BA /* XHRadarIndicatorView.m in Sources */,
 				573EE4CB1DD9ABF200D5D133 /* MJRefreshAutoFooter.m in Sources */,
 				573EE53B1DD9AC0000D5D133 /* HYBNetworking.m in Sources */,
 				573EE56E1DDB139C00D5D133 /* BaseView.m in Sources */,
 				573EE4D21DD9ABF200D5D133 /* MJRefreshAutoStateFooter.m in Sources */,
-				573EE5851DDC06CE00D5D133 /* MinePipeline.m in Sources */,
-				573EE5871DDC06CE00D5D133 /* MineView.m in Sources */,
 				573EE4BA1DD9ABF200D5D133 /* EXTNil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1425,6 +1499,7 @@
 			baseConfigurationReference = A43B8ED08EF840EB48ED6479 /* Pods-GlovesV1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-5";
 				DEVELOPMENT_TEAM = CF99UB3L46;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GlovesV1/Expand/Configer/Configer.pch";
 				INFOPLIST_FILE = GlovesV1/Info.plist;
@@ -1440,6 +1515,7 @@
 			baseConfigurationReference = 1F095EB996A9D6D3AC430B9F /* Pods-GlovesV1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-5";
 				DEVELOPMENT_TEAM = CF99UB3L46;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GlovesV1/Expand/Configer/Configer.pch";
 				INFOPLIST_FILE = GlovesV1/Info.plist;

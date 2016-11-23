@@ -20,11 +20,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Add you own code 
+    // Add you own code
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"停止" style:UIBarButtonItemStylePlain target:self action:@selector(dismissValidateView)];
+
 }
 
 - (void)setupPipeline:(__kindof MIPipeline *)pipeline {
     self.pipeline = pipeline;
 }
 
+- (void)dismissValidateView
+{
+    [self dismissViewControllerAnimated:YES completion:^{
+
+    }];
+}
 @end

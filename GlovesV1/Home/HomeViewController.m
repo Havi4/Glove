@@ -61,9 +61,17 @@
 - (void)showSuccess:(id)sender
 {
     SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
-
+    [alert setTitleFontFamily:@"PingFangSC-Regular" withSize:20.0f];
+    [alert setBodyTextFontFamily:@"PingFangSC-Regular" withSize:16.0f];
+    [alert setButtonsTextFontFamily:@"PingFangSC-Regular" withSize:16.0f];
     [alert addButton:@"校准手套" actionBlock:^(void) {
-        NSLog(@"Second button tapped");
+        DeBugLog(@"校准手套");
+        MIScene *validateScene = [MIScene sceneWithView:@"ValidateView" controller:@"ValidateViewController" store:@"ValidateStore"];
+        UIViewController *validateViewController = [[MIMediator sharedMediator] viewControllerWithScene:validateScene context:nil];
+        CYNavigationViewController *navi = [[CYNavigationViewController alloc]initWithRootViewController:validateViewController];
+        [self presentViewController:navi animated:YES completion:^{
+            
+        }];
     }];
 
     alert.soundURL = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/right_answer.mp3", [NSBundle mainBundle].resourcePath]];

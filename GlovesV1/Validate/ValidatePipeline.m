@@ -10,4 +10,12 @@
 
 @implementation ValidatePipeline
 
+- (BabyBluetooth *)babyBluetooth
+{
+    if (!_babyBluetooth) {
+        _babyBluetooth = [BabyBluetooth shareBabyBluetooth];
+    }
+    return _babyBluetooth;
+}
+
 @end
