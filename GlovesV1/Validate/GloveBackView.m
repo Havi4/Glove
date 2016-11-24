@@ -18,6 +18,9 @@
 @property (nonatomic, strong) FingerView *fourFinger;
 @property (nonatomic, strong) FingerView *fiveFinger;
 
+@property (nonatomic, strong) UIColor *successColor;
+@property (nonatomic, strong) UIColor *errorColor;
+
 @end
 
 @implementation GloveBackView
@@ -125,19 +128,43 @@
 
 }
 
-- (void)startValidateGloveWithIndex:(int)index
+- (void)startValidateGloveWithIndex:(int)index isOK:(BOOL)isOK
 {
     if (index == 1) {//代表大拇指
+        _fiveFinger.gaugeColor = isOK ? self.successColor:self.errorColor;
         [_fiveFinger setPercentage:0.35];
     }else if (index == 2) {//代表食指
+        _fourFinger.gaugeColor = isOK ? self.successColor:self.errorColor;
         [_fourFinger setPercentage:0.8];
     }else if (index == 3) {//代表中指
+        _threeFinger.gaugeColor = isOK ? self.successColor:self.errorColor;
         [_threeFinger setPercentage:0.8];
     }else if (index == 4) {//代表无名指
+        _twoFinger.gaugeColor = isOK ? self.successColor:self.errorColor;
         [_twoFinger setPercentage:0.8];
     }else if (index == 5) {//代表小拇指
+        _firstFinger.gaugeColor = isOK ? self.successColor:self.errorColor;
         [_firstFinger setPercentage:0.78];
     }
+}
+
+- (UIColor *)successColor
+{
+    return [UIColor colorWithRed:0.180 green:0.710 blue:0.463 alpha:1.00];
+}
+
+- (UIColor *)errorColor
+{
+    return [UIColor colorWithRed:0.753 green:0.161 blue:0.196 alpha:1.00];
+}
+
+- (void)reLoadView
+{
+    [_fiveFinger setPercentage:0];
+    [_fourFinger setPercentage:0];
+    [_threeFinger setPercentage:0];
+    [_twoFinger setPercentage:0];
+    [_firstFinger setPercentage:0];
 }
 /*
 // Only override drawRect: if you perform custom drawing.

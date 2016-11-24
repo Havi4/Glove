@@ -62,8 +62,10 @@
 
 - (void)startValidate
 {
+    self.leftView.titleString = @"第一步";
+    self.leftView.subTitleString = @"请握紧大拇指";
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.gloveBackView startValidateGloveWithIndex:1];
+        [self.gloveBackView startValidateGloveWithIndex:1 isOK:YES];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:15 options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
                 self.leftView.frame = (CGRect){-kScreenSize.width,(kScreenSize.height-64-50)*0.73 + 35,kScreenSize.width -30,(kScreenSize.height-64-50)*0.27};
@@ -78,7 +80,7 @@
 
     });
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(6 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.gloveBackView startValidateGloveWithIndex:2];
+        [self.gloveBackView startValidateGloveWithIndex:2 isOK:NO];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:15 options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
                 self.rightView.frame = (CGRect){-kScreenSize.width,(kScreenSize.height-64-50)*0.73 + 35,kScreenSize.width -30,(kScreenSize.height-64-50)*0.27};
@@ -92,7 +94,7 @@
 
     });
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(9 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.gloveBackView startValidateGloveWithIndex:3];
+        [self.gloveBackView startValidateGloveWithIndex:3 isOK:YES];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:15 options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
                 self.leftView.frame = (CGRect){-kScreenSize.width,(kScreenSize.height-64-50)*0.73 + 35,kScreenSize.width -30,(kScreenSize.height-64-50)*0.27};
@@ -106,7 +108,7 @@
 
     });
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(12 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.gloveBackView startValidateGloveWithIndex:4];
+        [self.gloveBackView startValidateGloveWithIndex:4 isOK:NO];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:15 options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
                 self.rightView.frame = (CGRect){-kScreenSize.width,(kScreenSize.height-64-50)*0.73 + 35,kScreenSize.width -30,(kScreenSize.height-64-50)*0.27};
@@ -121,20 +123,36 @@
     });
 
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(15 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.gloveBackView startValidateGloveWithIndex:5];
+        [self.gloveBackView startValidateGloveWithIndex:5 isOK:YES];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
-            [alert setTitleFontFamily:@"PingFangSC-Regular" withSize:20.0f];
-            [alert setBodyTextFontFamily:@"PingFangSC-Regular" withSize:16.0f];
-            [alert setButtonsTextFontFamily:@"PingFangSC-Regular" withSize:16.0f];
-            [alert addButton:@"校准手套" actionBlock:^(void) {
-                DeBugLog(@"校准手套");
+            if (self.pipeline.fiveFingerOK && self.pipeline.twoFingerOK && self.pipeline.threeFingerOK && self.pipeline.fourFingerOK && self.pipeline.fiveFingerOK) {
+                isDeviceOK = YES;
+                SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
+                [alert setTitleFontFamily:@"PingFangSC-Regular" withSize:20.0f];
+                [alert setBodyTextFontFamily:@"PingFangSC-Regular" withSize:16.0f];
+                [alert setButtonsTextFontFamily:@"PingFangSC-Regular" withSize:16.0f];
+                [alert addButton:@"开始训练" actionBlock:^(void) {
+                    DeBugLog(@"开始训练");
 
-            }];
+                }];
 
-            alert.soundURL = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/right_answer.mp3", [NSBundle mainBundle].resourcePath]];
+                alert.soundURL = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/right_answer.mp3", [NSBundle mainBundle].resourcePath]];
 
-            [alert showSuccess:@"成功" subTitle:@"手套校验完成" closeButtonTitle:@"开始训练" duration:0.0f];
+                [alert showSuccess:@"成功" subTitle:@"手套校验完成" closeButtonTitle:nil duration:0.0f];
+            }else{
+                SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
+                [alert setTitleFontFamily:@"PingFangSC-Regular" withSize:20.0f];
+                [alert setBodyTextFontFamily:@"PingFangSC-Regular" withSize:16.0f];
+                [alert setButtonsTextFontFamily:@"PingFangSC-Regular" withSize:16.0f];
+                [alert addButton:@"重新校验" actionBlock:^(void) {
+                    DeBugLog(@"重新训练");
+                    [self.gloveBackView reLoadView];
+                    [self startValidate];
+                }];
+
+                alert.soundURL = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/right_answer.mp3", [NSBundle mainBundle].resourcePath]];
+                [alert showError:@"失败" subTitle:@"手套校验失败" closeButtonTitle:@"开始训练" duration:0];
+            }
         });
     });
 }
@@ -258,9 +276,12 @@
          notify:currPeripheral
          characteristic:characteristic
          block:^(CBPeripheral *peripheral, CBCharacteristic *characteristics, NSError *error) {
+
              NSString *new = [[NSString alloc] initWithData:characteristics.value encoding:NSUTF8StringEncoding];
              NSString *cuta = [new stringByReplacingOccurrencesOfString:@"\n" withString:@""];
              NSString *cutr = [cuta stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+             DeBugLog(@"%@",peripheral);
+             self.pipeline.blueCurrentNum = cutr;
          }];
     }
     else{
@@ -268,6 +289,11 @@
         return;
     }
 
+}
+
+- (void)dealloc
+{
+    [self.pipeline.babyBluetooth cancelAllPeripheralsConnection];
 }
 
 @end

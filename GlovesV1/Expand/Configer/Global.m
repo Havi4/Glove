@@ -10,3 +10,4 @@
 
 CBPeripheral *currPeripheral = nil;
 NSString *selectedBlueName = @"";
+BOOL isDeviceOK = NO;

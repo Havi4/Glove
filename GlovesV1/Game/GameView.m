@@ -148,6 +148,7 @@
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter]removeObserver:self name:UIDeviceOrientationDidChangeNotification object:nil];
+    [self.pipeline.babyBluetooth cancelAllPeripheralsConnection];
 }
 
 - (void)setupPipeline:(__kindof MIPipeline *)pipeline {

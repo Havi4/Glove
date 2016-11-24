@@ -10,3 +10,4 @@
 
 extern CBPeripheral *currPeripheral;
 extern NSString *selectedBlueName;
+extern BOOL isDeviceOK;

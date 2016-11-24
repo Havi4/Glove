@@ -16,6 +16,8 @@
 @property (nonatomic, assign) BOOL fourFingerOK;
 @property (nonatomic, assign) BOOL fiveFingerOK;
 
+@property (nonatomic, strong) NSString *blueCurrentNum;
+
 @property (nonatomic, strong) BabyBluetooth *babyBluetooth;
 
 @end

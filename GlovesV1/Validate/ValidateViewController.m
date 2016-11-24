@@ -32,7 +32,7 @@
 - (void)dismissValidateView
 {
     [self dismissViewControllerAnimated:YES completion:^{
-
+        
     }];
 }
 @end

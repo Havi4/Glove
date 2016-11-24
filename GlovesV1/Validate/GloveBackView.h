@@ -10,6 +10,8 @@
 
 @interface GloveBackView : UIView
 
-- (void)startValidateGloveWithIndex:(int)index;
+- (void)startValidateGloveWithIndex:(int)index isOK:(BOOL)isOK;
+
+- (void)reLoadView;
 
 @end

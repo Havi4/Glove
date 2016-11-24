@@ -130,11 +130,19 @@
     if (!_colors1){
         _colors1 = [NSMutableArray array];
         for (int i = 0; i < 3; i++) {
-            UIColor *hexColor = [UIColor redColor];
+            UIColor *hexColor = self.gaugeColor?self.gaugeColor:[UIColor clearColor];
             [_colors1 addObject:(__bridge id)hexColor.CGColor];
         }
     }
     return _colors1;
+}
+
+- (void)setGaugeColor:(UIColor *)gaugeColor
+{
+    _gaugeColor = gaugeColor;
+    _colors1 = nil;
+    _gradientLayer = nil;
+    [self.bgLayer addSublayer:self.gradientLayer];
 }
 
 -(void)setPercentage:(double)percentage{

@@ -18,4 +18,6 @@
 
 @property (nonatomic, assign) CGSize corneroffset;
 
+@property (nonatomic, strong) UIColor *gaugeColor;
+
 @end
