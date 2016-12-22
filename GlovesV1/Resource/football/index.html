@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes"/>
+    	<meta name="apple-mobile-web-app-capable" content="yes"/>
+    	<meta name="full-screen" content="true"/>
+    	<meta name="screen-orientation" content="landscape"/>
+    	<meta name="x5-fullscreen" content="true"/>
+   	 	<meta name="360-fullscreen" content="true"/>
+        
+		<style>
+            html, body {
+                background: #888888;
+                padding: 0;
+                border: 0;
+                margin: 0;
+            }
+        </style>
+	</head>
+	<body>
+        <canvas id="canvas" width="667" height="375"></canvas>
+		<script src="js/game.js"></script>
+        <script type="text/javascript" src="lib/zepto.min.js"></script>
+        <script type="text/javascript" src="lib/fastclick.min.js"></script>
+        <script type="text/javascript">
+            Zepto(function($){
+                FastClick.attach(document.body);
+
+                // 点击穿透
+                var $under = $('#canvas');
+
+                $under.on('click', function(){
+                    window.webkit.messageHandlers.closeMe.postMessage(null);
+                });               
+
+            });
+        </script>
+	</body>
+</html>

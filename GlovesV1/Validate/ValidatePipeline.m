@@ -18,4 +18,21 @@
     return _babyBluetooth;
 }
 
+- (NSMutableArray *)dataArr
+{
+    if (!_dataArr) {
+        _dataArr = [[NSMutableArray alloc]init];
+    }
+    return _dataArr;
+}
+
+- (NSMutableArray *)dataArr1
+{
+    if (!_dataArr1) {
+        _dataArr1 = [[NSMutableArray alloc]init];
+    }
+    return _dataArr1;
+}
+
+
 @end

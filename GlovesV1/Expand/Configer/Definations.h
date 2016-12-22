@@ -53,4 +53,4 @@
 #define kContentNum 14//正文
 #define kSubContentNum 13//下标
 
-#define kRadarScanTime 4
+#define kRadarScanTime 6

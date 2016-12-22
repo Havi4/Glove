@@ -25,12 +25,13 @@
     [super viewDidLoad];
     // Add you own code
     self.title = @"训练";
+    [self showSuccess:nil];
 }
     
 - (void)viewDidAppear:(BOOL)animated
 {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self checkBluetooth:nil];
+//        [self checkBluetooth:nil];
     });
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"雷达" style:UIBarButtonItemStylePlain target:self action:@selector(checkBluetooth:)];
 

@@ -70,45 +70,45 @@
     self.backImage.center = self.center;
     [self addSubview:self.backImage];
 
-    _firstFinger = [[FingerView alloc]initWithFrame:(CGRect){27,137,100,100}];
+    _firstFinger = [[FingerView alloc]initWithFrame:(CGRect){-36,50,100,100}];
     _firstFinger.backgroundColor = [UIColor clearColor];
     _firstFinger.lineWidth = 28.5;
     _firstFinger.offsetNum = 35;
     _firstFinger.corneroffset = CGSizeMake(15, 15);
     _firstFinger.transform = CGAffineTransformMakeRotation(180 *M_PI / 180.0);
-    [self addSubview:_firstFinger];
+    [self.backImage addSubview:_firstFinger];
 
-    _twoFinger = [[FingerView alloc]initWithFrame:(CGRect){83,108,80,120}];
+    _twoFinger = [[FingerView alloc]initWithFrame:(CGRect){21,19,80,120}];
     _twoFinger.backgroundColor = [UIColor clearColor];
     _twoFinger.lineWidth = 30;
     _twoFinger.offsetNum = 18;
     _twoFinger.corneroffset = CGSizeMake(15, 15);
     _twoFinger.transform = CGAffineTransformMakeRotation(180 *M_PI / 180.0);
-    [self addSubview:_twoFinger];
+    [self.backImage addSubview:_twoFinger];
 
-    _threeFinger = [[FingerView alloc]initWithFrame:(CGRect){140,87,80,138}];
+    _threeFinger = [[FingerView alloc]initWithFrame:(CGRect){78,0,80,138}];
     _threeFinger.backgroundColor = [UIColor clearColor];
     _threeFinger.lineWidth = 33;
     _threeFinger.offsetNum = -4;
     _threeFinger.corneroffset = CGSizeMake(15, 15);
     _threeFinger.transform = CGAffineTransformMakeRotation(180 *M_PI / 180.0);
-    [self addSubview:_threeFinger];
+    [self.backImage addSubview:_threeFinger];
 
-    _fourFinger = [[FingerView alloc]initWithFrame:(CGRect){196,100,88,127}];
+    _fourFinger = [[FingerView alloc]initWithFrame:(CGRect){134,14,88,127}];
     _fourFinger.backgroundColor = [UIColor clearColor];
     _fourFinger.lineWidth = 33;
     _fourFinger.offsetNum = -28;
     _fourFinger.corneroffset = CGSizeMake(15, 15);
     _fourFinger.transform = CGAffineTransformMakeRotation(180 *M_PI / 180.0);
-    [self addSubview:_fourFinger];
+    [self.backImage addSubview:_fourFinger];
 
-    _fiveFinger = [[FingerView alloc]initWithFrame:(CGRect){229,185,260,80}];
+    _fiveFinger = [[FingerView alloc]initWithFrame:(CGRect){170,99,260,80}];
     _fiveFinger.backgroundColor = [UIColor clearColor];
     _fiveFinger.lineWidth = 33;
     _fiveFinger.offsetNum = -112;
     _fiveFinger.corneroffset = CGSizeMake(20, 10);
     _fiveFinger.transform = CGAffineTransformMakeRotation(180 *M_PI / 180.0);
-    [self addSubview:_fiveFinger];
+    [self.backImage addSubview:_fiveFinger];
 
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //        [_firstFinger setPercentage:0.78];

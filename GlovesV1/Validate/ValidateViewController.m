@@ -9,6 +9,7 @@
 #import "ValidateViewController.h"
 #import "ValidatePipeline.h"
 #import "Minya.h"
+#import "GetFingerDataViewController.h"
 
 @interface ValidateViewController ()
 
@@ -27,6 +28,19 @@
 
 - (void)setupPipeline:(__kindof MIPipeline *)pipeline {
     self.pipeline = pipeline;
+}
+
+- (void)addObservers {
+
+    @weakify(self)
+    [MIObserve(self.pipeline, fingerCheckOK) changed:^(id  _Nonnull newValue) {
+        @strongify(self)
+        if (self.pipeline.fingerCheckOK) {
+            UIViewController *gameViewController = [[GetFingerDataViewController alloc]init];
+            [self.navigationController pushViewController:gameViewController animated:YES];
+        }
+    }];
+
 }
 
 - (void)dismissValidateView

@@ -21,7 +21,9 @@
 @property (nonatomic, strong) UIView *naviBarView;
 @property (nonatomic, assign) BOOL isShowNavi;
 @property (nonatomic, strong) UITextView *textView;
-
+@property (nonatomic, strong) NSString *dataString;
+@property (nonatomic, assign) int oldValue;
+@property (nonatomic, assign) int currentValue;
 @end
 
 @implementation GameView
@@ -65,10 +67,12 @@
         self.isShowNavi = NO;
     }];
     //测试
-//    self.textView = [[UITextView alloc]init];
-//    self.textView.text = @"你好,测试开始";
-//    self.textView.frame =(CGRect){100,50,kScreenSize.height-200,kScreenSize.width-100};
-//    [self.webView addSubview:self.textView];
+    self.textView = [[UITextView alloc]init];
+    self.textView.text = @"实时数据展示";
+    self.textView.frame =(CGRect){100,0,250,30};
+    self.textView.textColor = [UIColor whiteColor];
+    self.textView.backgroundColor = [UIColor clearColor];
+    [self.webView addSubview:self.textView];
 }
 
 //OC在JS调用方法做的处理
@@ -159,10 +163,10 @@
     //开始扫描设备
     [self performSelector:@selector(loadData) withObject:nil afterDelay:2];
     [SVProgressHUD showInfoWithStatus:@"准备连接设备"];
-    [NSTimer scheduledTimerWithTimeInterval:1.5 repeats:YES block:^(NSTimer * _Nonnull timer) {
-        int y = [self getRandomNumber:0 to:370];
-        [self setJSData:[NSString stringWithFormat:@"%d",y]];
-    }];
+//    [NSTimer scheduledTimerWithTimeInterval:1.5 repeats:YES block:^(NSTimer * _Nonnull timer) {
+//        int y = [self getRandomNumber:0 to:370];
+//        [self setJSData:[NSString stringWithFormat:@"%d",y]];
+//    }];
 
 }
 
@@ -293,8 +297,32 @@
                    NSString *new = [[NSString alloc] initWithData:characteristics.value encoding:NSUTF8StringEncoding];
                    NSString *cuta = [new stringByReplacingOccurrencesOfString:@"\n" withString:@""];
                    NSString *cutr = [cuta stringByReplacingOccurrencesOfString:@"\r" withString:@""];
-//                   NSLog(@"new value %@",cutr);
-//                   self.textView.text = [NSString stringWithFormat:@"%@%@",self.textView.text,cutr];
+
+                   @synchronized (self) {
+                       self.dataString = new;
+                       NSRange rangeA = [new rangeOfString:@"A"];
+                       NSRange rangeB = [new rangeOfString:@"B"];
+                       NSRange rangeC = [new rangeOfString:@"C"];
+                       NSRange rangeD = [new rangeOfString:@"D"];
+                       NSRange rangeE = [new rangeOfString:@"E"];
+                       if (rangeA.length != 0 && new.length > 15 && rangeB.length != 0 && rangeC.length != 0 && rangeD.length != 0 && rangeE.length != 0) {
+                           int A = [[new substringWithRange:NSMakeRange(rangeA.location+1, rangeB.location-1)]intValue];
+                           int B = [[new substringWithRange:NSMakeRange(rangeB.location+1, rangeC.location - rangeB.location)]intValue];
+                           int C = [[new substringWithRange:NSMakeRange(rangeC.location+1, rangeD.location - rangeC.location)]intValue];
+                           int D = [[new substringWithRange:NSMakeRange(rangeD.location+1, rangeE.location-rangeD.location)]intValue];
+                           int E = [[new substringFromIndex:rangeE.location+1]intValue];
+                           int all = A + B + C +D +E;
+                           self.textView.text = [NSString stringWithFormat:@"%d：%d,%d,%d,%d,%d",all,A,B,C,D,E];
+                           self.currentValue = all;
+                           int a = self.currentValue - self.oldValue;
+                           DeBugLog(@"差值是%d",a);
+                           //原始值620；
+                           if (abs(a) > 10 && self.oldValue != 0) {
+                               [self setJSData:[NSString stringWithFormat:@"%f",(self.currentValue-minFingerData)*(375.0/(maxFingerData-minFingerData))]];
+                           }
+                           self.oldValue = self.currentValue;
+                       }
+                   };
         }];
     }
     else{

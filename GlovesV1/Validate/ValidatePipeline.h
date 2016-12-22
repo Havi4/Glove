@@ -15,8 +15,11 @@
 @property (nonatomic, assign) BOOL threeFingerOK;
 @property (nonatomic, assign) BOOL fourFingerOK;
 @property (nonatomic, assign) BOOL fiveFingerOK;
-
+@property (nonatomic, assign) BOOL fingerCheckOK;
 @property (nonatomic, strong) NSString *blueCurrentNum;
+@property (nonatomic, strong) NSString *oldFingerNum;
+@property (nonatomic, strong) NSMutableArray *dataArr;
+@property (nonatomic, strong) NSMutableArray *dataArr1;
 
 @property (nonatomic, strong) BabyBluetooth *babyBluetooth;
 

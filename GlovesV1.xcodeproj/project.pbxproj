@@ -15,6 +15,17 @@
 		571EFE8A1DDD8473001163DD /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571EFE861DDD8473001163DD /* GameViewController.m */; };
 		571EFE8F1DDDBC80001163DD /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571EFE8E1DDDBC80001163DD /* WebKit.framework */; };
 		571EFEA81DE0C828001163DD /* Games.plist in Resources */ = {isa = PBXBuildFile; fileRef = 571EFEA71DE0C828001163DD /* Games.plist */; };
+		57376AC71DFE8BAA004FA0BC /* backImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 57376ABA1DFE8BAA004FA0BC /* backImage.png */; };
+		57376AC81DFE8BAA004FA0BC /* football.png in Resources */ = {isa = PBXBuildFile; fileRef = 57376ABB1DFE8BAA004FA0BC /* football.png */; };
+		57376AC91DFE8BAA004FA0BC /* football_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 57376ABC1DFE8BAA004FA0BC /* football_back.png */; };
+		57376ACA1DFE8BAA004FA0BC /* football_door.png in Resources */ = {isa = PBXBuildFile; fileRef = 57376ABD1DFE8BAA004FA0BC /* football_door.png */; };
+		57376ACB1DFE8BAA004FA0BC /* football_preview.gif in Resources */ = {isa = PBXBuildFile; fileRef = 57376ABE1DFE8BAA004FA0BC /* football_preview.gif */; };
+		57376ACC1DFE8BAA004FA0BC /* hero.png in Resources */ = {isa = PBXBuildFile; fileRef = 57376ABF1DFE8BAA004FA0BC /* hero.png */; };
+		57376ACD1DFE8BAA004FA0BC /* monster.png in Resources */ = {isa = PBXBuildFile; fileRef = 57376AC01DFE8BAA004FA0BC /* monster.png */; };
+		57376ACE1DFE8BAA004FA0BC /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 57376AC11DFE8BAA004FA0BC /* index.html */; };
+		57376ACF1DFE8BAA004FA0BC /* game.js in Resources */ = {isa = PBXBuildFile; fileRef = 57376AC31DFE8BAA004FA0BC /* game.js */; };
+		57376AD01DFE8BAA004FA0BC /* fastclick.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 57376AC51DFE8BAA004FA0BC /* fastclick.min.js */; };
+		57376AD11DFE8BAA004FA0BC /* zepto.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 57376AC61DFE8BAA004FA0BC /* zepto.min.js */; };
 		573EE3F71DD9AB6800D5D133 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE3F61DD9AB6800D5D133 /* main.m */; };
 		573EE3FA1DD9AB6800D5D133 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE3F91DD9AB6800D5D133 /* AppDelegate.m */; };
 		573EE3FD1DD9AB6800D5D133 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EE3FC1DD9AB6800D5D133 /* ViewController.m */; };
@@ -131,6 +142,8 @@
 		57A4E27E1DE5D7DC00427AA4 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4E2721DE5D7DC00427AA4 /* SettingViewController.m */; };
 		57A4E2831DE5D82A00427AA4 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4E2801DE5D82A00427AA4 /* BaseModel.m */; };
 		57A4E2841DE5D82A00427AA4 /* UserInfoDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4E2821DE5D82A00427AA4 /* UserInfoDetailModel.m */; };
+		57A4E2941DEC04A900427AA4 /* GetFingerDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4E2931DEC04A900427AA4 /* GetFingerDataViewController.m */; };
+		57A4E2971DEC089600427AA4 /* FingerDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4E2961DEC089600427AA4 /* FingerDataView.m */; };
 		FDA76DD272DE3207140B18CC /* libPods-GlovesV1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DE5746400BBEC7A0817F37 /* libPods-GlovesV1.a */; };
 /* End PBXBuildFile section */
 
@@ -165,6 +178,17 @@
 		571EFE861DDD8473001163DD /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		571EFE8E1DDDBC80001163DD /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		571EFEA71DE0C828001163DD /* Games.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Games.plist; sourceTree = "<group>"; };
+		57376ABA1DFE8BAA004FA0BC /* backImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backImage.png; sourceTree = "<group>"; };
+		57376ABB1DFE8BAA004FA0BC /* football.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football.png; sourceTree = "<group>"; };
+		57376ABC1DFE8BAA004FA0BC /* football_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football_back.png; sourceTree = "<group>"; };
+		57376ABD1DFE8BAA004FA0BC /* football_door.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football_door.png; sourceTree = "<group>"; };
+		57376ABE1DFE8BAA004FA0BC /* football_preview.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = football_preview.gif; sourceTree = "<group>"; };
+		57376ABF1DFE8BAA004FA0BC /* hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero.png; sourceTree = "<group>"; };
+		57376AC01DFE8BAA004FA0BC /* monster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster.png; sourceTree = "<group>"; };
+		57376AC11DFE8BAA004FA0BC /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		57376AC31DFE8BAA004FA0BC /* game.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = game.js; sourceTree = "<group>"; };
+		57376AC51DFE8BAA004FA0BC /* fastclick.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = fastclick.min.js; sourceTree = "<group>"; };
+		57376AC61DFE8BAA004FA0BC /* zepto.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = zepto.min.js; sourceTree = "<group>"; };
 		573EE3F21DD9AB6800D5D133 /* GlovesV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlovesV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		573EE3F61DD9AB6800D5D133 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
 		573EE3F81DD9AB6800D5D133 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = GlovesV1/AppDelegate.h; sourceTree = "<group>"; };
@@ -404,6 +428,10 @@
 		57A4E2801DE5D82A00427AA4 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		57A4E2811DE5D82A00427AA4 /* UserInfoDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoDetailModel.h; sourceTree = "<group>"; };
 		57A4E2821DE5D82A00427AA4 /* UserInfoDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoDetailModel.m; sourceTree = "<group>"; };
+		57A4E2921DEC04A900427AA4 /* GetFingerDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetFingerDataViewController.h; sourceTree = "<group>"; };
+		57A4E2931DEC04A900427AA4 /* GetFingerDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetFingerDataViewController.m; sourceTree = "<group>"; };
+		57A4E2951DEC089600427AA4 /* FingerDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FingerDataView.h; sourceTree = "<group>"; };
+		57A4E2961DEC089600427AA4 /* FingerDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FingerDataView.m; sourceTree = "<group>"; };
 		A43B8ED08EF840EB48ED6479 /* Pods-GlovesV1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovesV1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GlovesV1/Pods-GlovesV1.debug.xcconfig"; sourceTree = "<group>"; };
 		D4DE5746400BBEC7A0817F37 /* libPods-GlovesV1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GlovesV1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -460,6 +488,48 @@
 			);
 			name = Game;
 			path = GlovesV1/Game;
+			sourceTree = "<group>";
+		};
+		57376AB81DFE8BAA004FA0BC /* football */ = {
+			isa = PBXGroup;
+			children = (
+				57376AB91DFE8BAA004FA0BC /* images */,
+				57376AC11DFE8BAA004FA0BC /* index.html */,
+				57376AC21DFE8BAA004FA0BC /* js */,
+				57376AC41DFE8BAA004FA0BC /* lib */,
+			);
+			path = football;
+			sourceTree = "<group>";
+		};
+		57376AB91DFE8BAA004FA0BC /* images */ = {
+			isa = PBXGroup;
+			children = (
+				57376ABA1DFE8BAA004FA0BC /* backImage.png */,
+				57376ABB1DFE8BAA004FA0BC /* football.png */,
+				57376ABC1DFE8BAA004FA0BC /* football_back.png */,
+				57376ABD1DFE8BAA004FA0BC /* football_door.png */,
+				57376ABE1DFE8BAA004FA0BC /* football_preview.gif */,
+				57376ABF1DFE8BAA004FA0BC /* hero.png */,
+				57376AC01DFE8BAA004FA0BC /* monster.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		57376AC21DFE8BAA004FA0BC /* js */ = {
+			isa = PBXGroup;
+			children = (
+				57376AC31DFE8BAA004FA0BC /* game.js */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		57376AC41DFE8BAA004FA0BC /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				57376AC51DFE8BAA004FA0BC /* fastclick.min.js */,
+				57376AC61DFE8BAA004FA0BC /* zepto.min.js */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 		573EE3E91DD9AB6800D5D133 = {
@@ -873,6 +943,7 @@
 		573EE53E1DD9AC0B00D5D133 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				57376AB81DFE8BAA004FA0BC /* football */,
 				57A46A111DE47E4200F186BA /* right_answer.mp3 */,
 				571EFE7C1DDC4463001163DD /* 手写大象体.ttf */,
 				571EFE781DDC109F001163DD /* Assets.xcassets */,
@@ -1032,8 +1103,12 @@
 				57A4E2561DE57B4A00427AA4 /* FingerView.m */,
 				57A4E2581DE5BF3A00427AA4 /* FingerSubView.h */,
 				57A4E2591DE5BF3A00427AA4 /* FingerSubView.m */,
+				57A4E2951DEC089600427AA4 /* FingerDataView.h */,
+				57A4E2961DEC089600427AA4 /* FingerDataView.m */,
 				57A46A1A1DE480A600F186BA /* ValidateViewController.h */,
 				57A46A1B1DE480A600F186BA /* ValidateViewController.m */,
+				57A4E2921DEC04A900427AA4 /* GetFingerDataViewController.h */,
+				57A4E2931DEC04A900427AA4 /* GetFingerDataViewController.m */,
 			);
 			name = Validate;
 			path = GlovesV1/Validate;
@@ -1158,15 +1233,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57376ACF1DFE8BAA004FA0BC /* game.js in Resources */,
 				571EFEA81DE0C828001163DD /* Games.plist in Resources */,
 				573EE4051DD9AB6800D5D133 /* LaunchScreen.storyboard in Resources */,
+				57376AC71DFE8BAA004FA0BC /* backImage.png in Resources */,
+				57376AD01DFE8BAA004FA0BC /* fastclick.min.js in Resources */,
 				573EE4D91DD9ABF200D5D133 /* MJRefresh.bundle in Resources */,
+				57376ACB1DFE8BAA004FA0BC /* football_preview.gif in Resources */,
 				571EFE7D1DDC4463001163DD /* 手写大象体.ttf in Resources */,
+				57376ACD1DFE8BAA004FA0BC /* monster.png in Resources */,
+				57376AC81DFE8BAA004FA0BC /* football.png in Resources */,
 				571EFE791DDC109F001163DD /* Assets.xcassets in Resources */,
+				57376AC91DFE8BAA004FA0BC /* football_back.png in Resources */,
 				573EE4001DD9AB6800D5D133 /* Main.storyboard in Resources */,
 				57A46A121DE47E4200F186BA /* right_answer.mp3 in Resources */,
+				57376ACC1DFE8BAA004FA0BC /* hero.png in Resources */,
+				57376ACA1DFE8BAA004FA0BC /* football_door.png in Resources */,
 				573EE5431DD9AC0B00D5D133 /* Setting.plist in Resources */,
 				573EE5441DD9AC0B00D5D133 /* storehouse.plist in Resources */,
+				57376ACE1DFE8BAA004FA0BC /* index.html in Resources */,
+				57376AD11DFE8BAA004FA0BC /* zepto.min.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1267,10 +1353,12 @@
 				573EE4D61DD9ABF200D5D133 /* MJRefreshGifHeader.m in Sources */,
 				573EE3FA1DD9AB6800D5D133 /* AppDelegate.m in Sources */,
 				57A469EE1DE3E57800F186BA /* RadarView.m in Sources */,
+				57A4E2941DEC04A900427AA4 /* GetFingerDataViewController.m in Sources */,
 				571EFE871DDD8473001163DD /* GamePipeline.m in Sources */,
 				571EFE881DDD8473001163DD /* GameStore.m in Sources */,
 				573EE5251DD9AC0000D5D133 /* NSObject+Common.m in Sources */,
 				57A4E27A1DE5D7DC00427AA4 /* MineWeatherTableViewCell.m in Sources */,
+				57A4E2971DEC089600427AA4 /* FingerDataView.m in Sources */,
 				57A4E2571DE57B4A00427AA4 /* FingerView.m in Sources */,
 				573EE4CA1DD9ABF200D5D133 /* UIView+MIPipeline.m in Sources */,
 				573EE4B81DD9ABF200D5D133 /* EXTADT.m in Sources */,
@@ -1500,13 +1588,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-5";
-				DEVELOPMENT_TEAM = CF99UB3L46;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GlovesV1/Expand/Configer/Configer.pch";
 				INFOPLIST_FILE = GlovesV1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ihotkeys.ihotkeys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -1516,13 +1607,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-5";
-				DEVELOPMENT_TEAM = CF99UB3L46;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GlovesV1/Expand/Configer/Configer.pch";
 				INFOPLIST_FILE = GlovesV1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ihotkeys.ihotkeys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
