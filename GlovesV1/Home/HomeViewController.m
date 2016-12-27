@@ -12,8 +12,9 @@
 #import "GameViewController.h"
 #import "CYNavigationViewController.h"
 #import "SCLAlertView.h"
+#import "GameSettingViewController.h"
 
-@interface HomeViewController ()
+@interface HomeViewController ()<UIAlertViewDelegate>
 
 @property (nonatomic, strong) HomePipeline *pipeline;
 
@@ -25,13 +26,18 @@
     [super viewDidLoad];
     // Add you own code
     self.title = @"训练";
-    [self showSuccess:nil];
+    [self checkBluetooth:nil];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = NO;
 }
     
 - (void)viewDidAppear:(BOOL)animated
 {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        [self checkBluetooth:nil];
     });
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"雷达" style:UIBarButtonItemStylePlain target:self action:@selector(checkBluetooth:)];
 
@@ -80,15 +86,30 @@
     [alert showSuccess:@"提示" subTitle:@"蓝牙设备已连接" closeButtonTitle:@"开始训练" duration:0.0f];
 }
 
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex==0) {
+        [self checkBluetooth:nil];
+    }
+}
+
 - (void)addObservers {
     
     @weakify(self)
     [MIObserve(self.pipeline, selectedIndexPath) changed:^(id  _Nonnull newValue) {
         @strongify(self)
+        if (!currPeripheral) {
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"请校验设备" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+            [alert show];
+            return;
+        }
         NSIndexPath *indexPath = newValue;
-        MIScene *gameScene = [MIScene sceneWithView:@"GameView" controller:@"GameViewController" store:@"GameStore"];
-        UIViewController *gameViewController = [[MIMediator sharedMediator] viewControllerWithScene:gameScene context:self.pipeline.controllerSetting];
-        [self.navigationController pushViewController:gameViewController animated:YES];
+        GameSettingViewController *game = [[GameSettingViewController alloc]init];
+        game.settingDic = self.pipeline.controllerSetting;
+        [self.navigationController pushViewController:game animated:YES];
+//        MIScene *gameScene = [MIScene sceneWithView:@"GameView" controller:@"GameViewController" store:@"GameStore"];
+//        UIViewController *gameViewController = [[MIMediator sharedMediator] viewControllerWithScene:gameScene context:self.pipeline.controllerSetting];
+//        [self.navigationController pushViewController:gameViewController animated:YES];
     }];
     
 }

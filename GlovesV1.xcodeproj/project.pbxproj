@@ -15,6 +15,17 @@
 		571EFE8A1DDD8473001163DD /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571EFE861DDD8473001163DD /* GameViewController.m */; };
 		571EFE8F1DDDBC80001163DD /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571EFE8E1DDDBC80001163DD /* WebKit.framework */; };
 		571EFEA81DE0C828001163DD /* Games.plist in Resources */ = {isa = PBXBuildFile; fileRef = 571EFEA71DE0C828001163DD /* Games.plist */; };
+		5732A00B1E0B810400CBC022 /* GameSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5732A00A1E0B810400CBC022 /* GameSettingViewController.m */; };
+		5732A0171E0B857300CBC022 /* AKDropdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5732A00E1E0B857300CBC022 /* AKDropdownViewController.m */; };
+		5732A0181E0B857300CBC022 /* AKLookups.m in Sources */ = {isa = PBXBuildFile; fileRef = 5732A0101E0B857300CBC022 /* AKLookups.m */; };
+		5732A0191E0B857300CBC022 /* AKLookupsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5732A0121E0B857300CBC022 /* AKLookupsListViewController.m */; };
+		5732A01A1E0B857300CBC022 /* NSString+StringSizeWithFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 5732A0141E0B857300CBC022 /* NSString+StringSizeWithFont.m */; };
+		5732A01B1E0B857300CBC022 /* selector_btn_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5732A0151E0B857300CBC022 /* selector_btn_arrow.png */; };
+		5732A01C1E0B857300CBC022 /* selector_btn_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5732A0161E0B857300CBC022 /* selector_btn_arrow@2x.png */; };
+		5732A01F1E0B869A00CBC022 /* AKMeme.m in Sources */ = {isa = PBXBuildFile; fileRef = 5732A01E1E0B869A00CBC022 /* AKMeme.m */; };
+		5732A0221E0B9C8200CBC022 /* TagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5732A0211E0B9C8200CBC022 /* TagView.m */; };
+		5732A0251E0BA08E00CBC022 /* DataCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5732A0241E0BA08E00CBC022 /* DataCollectionViewController.m */; };
+		5732A0281E0BAA7B00CBC022 /* DataFingerableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5732A0271E0BAA7B00CBC022 /* DataFingerableViewCell.m */; };
 		57376AC71DFE8BAA004FA0BC /* backImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 57376ABA1DFE8BAA004FA0BC /* backImage.png */; };
 		57376AC81DFE8BAA004FA0BC /* football.png in Resources */ = {isa = PBXBuildFile; fileRef = 57376ABB1DFE8BAA004FA0BC /* football.png */; };
 		57376AC91DFE8BAA004FA0BC /* football_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 57376ABC1DFE8BAA004FA0BC /* football_back.png */; };
@@ -178,6 +189,26 @@
 		571EFE861DDD8473001163DD /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		571EFE8E1DDDBC80001163DD /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		571EFEA71DE0C828001163DD /* Games.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Games.plist; sourceTree = "<group>"; };
+		5732A0091E0B810400CBC022 /* GameSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSettingViewController.h; sourceTree = "<group>"; };
+		5732A00A1E0B810400CBC022 /* GameSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSettingViewController.m; sourceTree = "<group>"; };
+		5732A00D1E0B857300CBC022 /* AKDropdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKDropdownViewController.h; sourceTree = "<group>"; };
+		5732A00E1E0B857300CBC022 /* AKDropdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKDropdownViewController.m; sourceTree = "<group>"; };
+		5732A00F1E0B857300CBC022 /* AKLookups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKLookups.h; sourceTree = "<group>"; };
+		5732A0101E0B857300CBC022 /* AKLookups.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKLookups.m; sourceTree = "<group>"; };
+		5732A0111E0B857300CBC022 /* AKLookupsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKLookupsListViewController.h; sourceTree = "<group>"; };
+		5732A0121E0B857300CBC022 /* AKLookupsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKLookupsListViewController.m; sourceTree = "<group>"; };
+		5732A0131E0B857300CBC022 /* NSString+StringSizeWithFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringSizeWithFont.h"; sourceTree = "<group>"; };
+		5732A0141E0B857300CBC022 /* NSString+StringSizeWithFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringSizeWithFont.m"; sourceTree = "<group>"; };
+		5732A0151E0B857300CBC022 /* selector_btn_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selector_btn_arrow.png; sourceTree = "<group>"; };
+		5732A0161E0B857300CBC022 /* selector_btn_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selector_btn_arrow@2x.png"; sourceTree = "<group>"; };
+		5732A01D1E0B869A00CBC022 /* AKMeme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKMeme.h; sourceTree = "<group>"; };
+		5732A01E1E0B869A00CBC022 /* AKMeme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKMeme.m; sourceTree = "<group>"; };
+		5732A0201E0B9C8200CBC022 /* TagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagView.h; sourceTree = "<group>"; };
+		5732A0211E0B9C8200CBC022 /* TagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagView.m; sourceTree = "<group>"; };
+		5732A0231E0BA08E00CBC022 /* DataCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCollectionViewController.h; sourceTree = "<group>"; };
+		5732A0241E0BA08E00CBC022 /* DataCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCollectionViewController.m; sourceTree = "<group>"; };
+		5732A0261E0BAA7B00CBC022 /* DataFingerableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataFingerableViewCell.h; sourceTree = "<group>"; };
+		5732A0271E0BAA7B00CBC022 /* DataFingerableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataFingerableViewCell.m; sourceTree = "<group>"; };
 		57376ABA1DFE8BAA004FA0BC /* backImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backImage.png; sourceTree = "<group>"; };
 		57376ABB1DFE8BAA004FA0BC /* football.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football.png; sourceTree = "<group>"; };
 		57376ABC1DFE8BAA004FA0BC /* football_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football_back.png; sourceTree = "<group>"; };
@@ -490,6 +521,27 @@
 			path = GlovesV1/Game;
 			sourceTree = "<group>";
 		};
+		5732A00C1E0B857300CBC022 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5732A0201E0B9C8200CBC022 /* TagView.h */,
+				5732A0211E0B9C8200CBC022 /* TagView.m */,
+				5732A01D1E0B869A00CBC022 /* AKMeme.h */,
+				5732A01E1E0B869A00CBC022 /* AKMeme.m */,
+				5732A00D1E0B857300CBC022 /* AKDropdownViewController.h */,
+				5732A00E1E0B857300CBC022 /* AKDropdownViewController.m */,
+				5732A00F1E0B857300CBC022 /* AKLookups.h */,
+				5732A0101E0B857300CBC022 /* AKLookups.m */,
+				5732A0111E0B857300CBC022 /* AKLookupsListViewController.h */,
+				5732A0121E0B857300CBC022 /* AKLookupsListViewController.m */,
+				5732A0131E0B857300CBC022 /* NSString+StringSizeWithFont.h */,
+				5732A0141E0B857300CBC022 /* NSString+StringSizeWithFont.m */,
+				5732A0151E0B857300CBC022 /* selector_btn_arrow.png */,
+				5732A0161E0B857300CBC022 /* selector_btn_arrow@2x.png */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		57376AB81DFE8BAA004FA0BC /* football */ = {
 			isa = PBXGroup;
 			children = (
@@ -575,6 +627,7 @@
 		573EE4281DD9ABF200D5D133 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				5732A00C1E0B857300CBC022 /* Classes */,
 				57A46A081DE44A9700F186BA /* CYLTableViewPlaceHolder */,
 				57A469F51DE40AFA00F186BA /* XHRadarView */,
 				573EE4291DD9ABF200D5D133 /* CYLTabBarController */,
@@ -998,6 +1051,12 @@
 				573EE54F1DD9C59100D5D133 /* HomeView.m */,
 				573EE5501DD9C59100D5D133 /* HomeViewController.h */,
 				573EE5511DD9C59100D5D133 /* HomeViewController.m */,
+				5732A0091E0B810400CBC022 /* GameSettingViewController.h */,
+				5732A00A1E0B810400CBC022 /* GameSettingViewController.m */,
+				5732A0231E0BA08E00CBC022 /* DataCollectionViewController.h */,
+				5732A0241E0BA08E00CBC022 /* DataCollectionViewController.m */,
+				5732A0261E0BAA7B00CBC022 /* DataFingerableViewCell.h */,
+				5732A0271E0BAA7B00CBC022 /* DataFingerableViewCell.m */,
 			);
 			name = Home;
 			path = GlovesV1/Home;
@@ -1233,6 +1292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5732A01C1E0B857300CBC022 /* selector_btn_arrow@2x.png in Resources */,
 				57376ACF1DFE8BAA004FA0BC /* game.js in Resources */,
 				571EFEA81DE0C828001163DD /* Games.plist in Resources */,
 				573EE4051DD9AB6800D5D133 /* LaunchScreen.storyboard in Resources */,
@@ -1244,6 +1304,7 @@
 				57376ACD1DFE8BAA004FA0BC /* monster.png in Resources */,
 				57376AC81DFE8BAA004FA0BC /* football.png in Resources */,
 				571EFE791DDC109F001163DD /* Assets.xcassets in Resources */,
+				5732A01B1E0B857300CBC022 /* selector_btn_arrow.png in Resources */,
 				57376AC91DFE8BAA004FA0BC /* football_back.png in Resources */,
 				573EE4001DD9AB6800D5D133 /* Main.storyboard in Resources */,
 				57A46A121DE47E4200F186BA /* right_answer.mp3 in Resources */,
@@ -1325,10 +1386,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5732A0251E0BA08E00CBC022 /* DataCollectionViewController.m in Sources */,
 				573EE4B71DD9ABF200D5D133 /* NSObject+MISwizzle.m in Sources */,
 				57A46A1D1DE480A600F186BA /* ValidateStore.m in Sources */,
 				57A46A1F1DE480A600F186BA /* ValidateViewController.m in Sources */,
 				573EE4AE1DD9ABF200D5D133 /* CYLTabBarControllerConfig.m in Sources */,
+				5732A01A1E0B857300CBC022 /* NSString+StringSizeWithFont.m in Sources */,
 				573EE4B91DD9ABF200D5D133 /* EXTConcreteProtocol.m in Sources */,
 				57A4E2731DE5D7DC00427AA4 /* MineHeaderTableViewCell.m in Sources */,
 				573EE5531DD9C59100D5D133 /* HomeStore.m in Sources */,
@@ -1347,12 +1410,14 @@
 				573EE4D81DD9ABF200D5D133 /* MJRefreshStateHeader.m in Sources */,
 				573EE5721DDB6A5400D5D133 /* GameTableViewCell.m in Sources */,
 				573EE53A1DD9AC0000D5D133 /* BaseNetworkAPI.m in Sources */,
+				5732A0191E0B857300CBC022 /* AKLookupsListViewController.m in Sources */,
 				573EE56B1DDAEC3300D5D133 /* UIColor+FlatColors.m in Sources */,
 				573EE4CE1DD9ABF200D5D133 /* MJRefreshFooter.m in Sources */,
 				573EE4BB1DD9ABF200D5D133 /* EXTRuntimeExtensions.m in Sources */,
 				573EE4D61DD9ABF200D5D133 /* MJRefreshGifHeader.m in Sources */,
 				573EE3FA1DD9AB6800D5D133 /* AppDelegate.m in Sources */,
 				57A469EE1DE3E57800F186BA /* RadarView.m in Sources */,
+				5732A0281E0BAA7B00CBC022 /* DataFingerableViewCell.m in Sources */,
 				57A4E2941DEC04A900427AA4 /* GetFingerDataViewController.m in Sources */,
 				571EFE871DDD8473001163DD /* GamePipeline.m in Sources */,
 				571EFE881DDD8473001163DD /* GameStore.m in Sources */,
@@ -1368,10 +1433,13 @@
 				573EE4BD1DD9ABF200D5D133 /* EXTScope.m in Sources */,
 				573EE4C81DD9ABF200D5D133 /* MIStore.m in Sources */,
 				573EE4C11DD9ABF200D5D133 /* LICENSE.md in Sources */,
+				5732A0181E0B857300CBC022 /* AKLookups.m in Sources */,
+				5732A00B1E0B810400CBC022 /* GameSettingViewController.m in Sources */,
 				573EE4CC1DD9ABF200D5D133 /* MJRefreshBackFooter.m in Sources */,
 				573EE4B11DD9ABF200D5D133 /* UIViewController+CYLTabBarControllerExtention.m in Sources */,
 				573EE4B41DD9ABF200D5D133 /* IanClickImageView.m in Sources */,
 				57A4E2781DE5D7DC00427AA4 /* MineView.m in Sources */,
+				5732A0221E0B9C8200CBC022 /* TagView.m in Sources */,
 				573EE5551DD9C59100D5D133 /* HomeViewController.m in Sources */,
 				573EE4DA1DD9ABF200D5D133 /* MJRefreshConst.m in Sources */,
 				573EE4C21DD9ABF200D5D133 /* README.md in Sources */,
@@ -1415,6 +1483,7 @@
 				573EE4DB1DD9ABF200D5D133 /* NSBundle+MJRefresh.m in Sources */,
 				573EE4BF1DD9ABF200D5D133 /* NSInvocation+EXT.m in Sources */,
 				573EE4DF1DD9ABF200D5D133 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
+				5732A01F1E0B869A00CBC022 /* AKMeme.m in Sources */,
 				573EE4AC1DD9ABF200D5D133 /* CYLTabBar.m in Sources */,
 				57A46A1C1DE480A600F186BA /* ValidatePipeline.m in Sources */,
 				573EE4CF1DD9ABF200D5D133 /* MJRefreshHeader.m in Sources */,
@@ -1438,6 +1507,7 @@
 				573EE56E1DDB139C00D5D133 /* BaseView.m in Sources */,
 				573EE4D21DD9ABF200D5D133 /* MJRefreshAutoStateFooter.m in Sources */,
 				573EE4BA1DD9ABF200D5D133 /* EXTNil.m in Sources */,
+				5732A0171E0B857300CBC022 /* AKDropdownViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

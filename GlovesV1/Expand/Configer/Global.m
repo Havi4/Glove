@@ -13,3 +13,4 @@ NSString *selectedBlueName = @"";
 BOOL isDeviceOK = NO;
 NSInteger minFingerData = NSIntegerMax;
 NSInteger maxFingerData = NSIntegerMin;
+NSString *gameLevel = @"";

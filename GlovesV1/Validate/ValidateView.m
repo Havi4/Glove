@@ -65,7 +65,7 @@
     alert.soundURL = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/right_answer.mp3", [NSBundle mainBundle].resourcePath]];
 
     [alert showNotice:@"提示" subTitle:@"请根据界面提示伸握手指完成手套校验" closeButtonTitle:nil duration:0];
-//    [self getBlueData];
+    [self getBlueData];
     @weakify(self)
     __block BOOL isDone = YES;
     [MIObserve(self.pipeline, blueCurrentNum) changed:^(id  _Nonnull newValue) {
@@ -122,13 +122,24 @@
         int maxFive = 0,minFive = 1000;
 
         for (NSString *data in self.pipeline.dataArr) {
-            if (data.length == 20) {
-                int one = [[data substringWithRange:NSMakeRange(1, 3)] intValue];
-                int two = [[data substringWithRange:NSMakeRange(5, 3)] intValue];
-                int three = [[data substringWithRange:NSMakeRange(9, 3)] intValue];
-                int four = [[data substringWithRange:NSMakeRange(13, 3)] intValue];
-                int five = [[data substringWithRange:NSMakeRange(17, 3)] intValue];
-                int total = one + two + three + four + five;
+            if (data.length > 0) {
+                NSString *dataA = data;
+                NSRange A = [dataA rangeOfString:@"A"];
+                NSRange B = [dataA rangeOfString:@"B"];
+                int one = [[dataA substringWithRange:NSMakeRange(A.location+1, B.location)] intValue];
+                NSString *bSub = [dataA substringFromIndex:B.location+1];
+                NSRange C = [bSub rangeOfString:@"C"];
+                int two = [[bSub substringWithRange:NSMakeRange(0, C.location)] intValue];
+                NSString *cSub = [bSub substringFromIndex:C.location+1];
+                NSRange D = [cSub rangeOfString:@"D"];
+                int three = [[cSub substringWithRange:NSMakeRange(0, D.location)] intValue];
+                NSString *dSub = [cSub substringFromIndex:D.location+1];
+                NSRange E = [dSub rangeOfString:@"E"];
+                int four = [[dSub substringWithRange:NSMakeRange(0, E.location)] intValue];
+                NSString *eSub = [dSub substringFromIndex:E.location+1];
+                NSRange F = [eSub rangeOfString:@"F"];
+                int five = [[eSub substringWithRange:NSMakeRange(0, F.location)] intValue];
+
                 if (one > maxOne) {
                     maxOne = one;
                 }
@@ -144,20 +155,28 @@
                 if (five > maxFive) {
                     maxFive = five;
                 }
-                if (total > maxTotal) {
-                    maxTotal = total;
-                }
             }
         }
 
+
         for (NSString *data1 in self.pipeline.dataArr1) {
-            if (data1.length == 20) {
-                int one = [[data1 substringWithRange:NSMakeRange(1, 3)] intValue];
-                int two = [[data1 substringWithRange:NSMakeRange(5, 3)] intValue];
-                int three = [[data1 substringWithRange:NSMakeRange(9, 3)] intValue];
-                int four = [[data1 substringWithRange:NSMakeRange(13, 3)] intValue];
-                int five = [[data1 substringWithRange:NSMakeRange(17, 3)] intValue];
-                int total = one + two + three + four + five;
+            if (data1.length > 0) {
+                NSString *dataA = data1;
+                NSRange A = [dataA rangeOfString:@"A"];
+                NSRange B = [dataA rangeOfString:@"B"];
+                int one = [[dataA substringWithRange:NSMakeRange(A.location+1, B.location)] intValue];
+                NSString *bSub = [dataA substringFromIndex:B.location+1];
+                NSRange C = [bSub rangeOfString:@"C"];
+                int two = [[bSub substringWithRange:NSMakeRange(0, C.location)] intValue];
+                NSString *cSub = [bSub substringFromIndex:C.location+1];
+                NSRange D = [cSub rangeOfString:@"D"];
+                int three = [[cSub substringWithRange:NSMakeRange(0, D.location)] intValue];
+                NSString *dSub = [cSub substringFromIndex:D.location+1];
+                NSRange E = [dSub rangeOfString:@"E"];
+                int four = [[dSub substringWithRange:NSMakeRange(0, E.location)] intValue];
+                NSString *eSub = [dSub substringFromIndex:E.location+1];
+                NSRange F = [eSub rangeOfString:@"F"];
+                int five = [[eSub substringWithRange:NSMakeRange(0, F.location)] intValue];
                 if (one < minOne) {
                     minOne = one;
                 }
@@ -173,38 +192,35 @@
                 if (five < minFive) {
                     minFive = five;
                 }
-                if (total < minTotal) {
-                    minTotal = total;
-                }
             }
 
         }
 
-        if (minOne != maxOne) {
+        if ((minOne != maxOne)&&minOne != 0) {
             self.pipeline.firstFingerOK = YES;
         }else {
             self.pipeline.firstFingerOK = NO;
         }
 
-        if (minTwo != maxTwo) {
+        if ((minTwo != maxTwo) && minTwo != 0) {
             self.pipeline.twoFingerOK = YES;
         }else {
             self.pipeline.twoFingerOK = NO;
         }
 
-        if (minThree != maxThree) {
+        if ((minThree != maxThree) && minThree != 0) {
             self.pipeline.threeFingerOK = YES;
         }else {
             self.pipeline.threeFingerOK = NO;
         }
 
-        if (minFour != maxFour) {
+        if ((minFour != maxFour) && minFour != 0) {
             self.pipeline.fourFingerOK = YES;
         }else {
             self.pipeline.fourFingerOK = NO;
         }
 
-        if (minFive != maxFive) {
+        if ((minFive != maxFive )&& minFive != 0) {
             self.pipeline.fiveFingerOK = YES;
         }else {
             self.pipeline.fiveFingerOK = NO;
@@ -257,7 +273,7 @@
                 [alert setButtonsTextFontFamily:@"PingFangSC-Regular" withSize:16.0f];
                 [alert addButton:@"开始训练" actionBlock:^(void) {
                     DeBugLog(@"开始训练");
-
+                    self.pipeline.checkDone = YES;
                 }];
 
                 alert.soundURL = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/right_answer.mp3", [NSBundle mainBundle].resourcePath]];
@@ -275,7 +291,7 @@
                 }];
 
                 alert.soundURL = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/right_answer.mp3", [NSBundle mainBundle].resourcePath]];
-                [alert showError:@"失败" subTitle:@"手套校验失败" closeButtonTitle:@"开始训练" duration:0];
+                [alert showError:@"失败" subTitle:@"手套校验失败" closeButtonTitle:nil duration:0];
             }
         });
 
@@ -619,7 +635,7 @@
         if ([[NSString stringWithFormat:@"%@",service.UUID] isEqualToString:@"DFB0"]) {
             [self setNotifiy:service];
         }
-        
+
     }];
 
     self.pipeline.babyBluetooth.having(currPeripheral).and.channel(channelOnPeropheralView).then.connectToPeripherals().discoverServices().discoverCharacteristics().readValueForCharacteristic().discoverDescriptorsForCharacteristic().readValueForDescriptors().begin();

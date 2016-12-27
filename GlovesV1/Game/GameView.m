@@ -24,6 +24,7 @@
 @property (nonatomic, strong) NSString *dataString;
 @property (nonatomic, assign) int oldValue;
 @property (nonatomic, assign) int currentValue;
+@property (nonatomic, strong) NSTimer *sentDataTimer;
 @end
 
 @implementation GameView
@@ -73,6 +74,18 @@
     self.textView.textColor = [UIColor whiteColor];
     self.textView.backgroundColor = [UIColor clearColor];
     [self.webView addSubview:self.textView];
+    self.sentDataTimer = [NSTimer scheduledTimerWithTimeInterval:0.25 block:^(NSTimer * _Nonnull timer) {
+        int a = self.currentValue - self.oldValue;
+        DeBugLog(@"差值是%d",a);
+            //原始值620；
+        if (abs(a)>25) {
+                //
+            [self setJSData:[NSString stringWithFormat:@"%f",(self.oldValue-minFingerData)*(375.0/(maxFingerData-minFingerData))]];
+            self.oldValue = self.currentValue;
+        }
+
+
+    } repeats:YES];
 }
 
 //OC在JS调用方法做的处理
@@ -314,14 +327,8 @@
                            int all = A + B + C +D +E;
                            self.textView.text = [NSString stringWithFormat:@"%d：%d,%d,%d,%d,%d",all,A,B,C,D,E];
                            self.currentValue = all;
-                           int a = self.currentValue - self.oldValue;
-                           DeBugLog(@"差值是%d",a);
-                           //原始值620；
-                           if (abs(a) > 10 && self.oldValue != 0) {
-                               [self setJSData:[NSString stringWithFormat:@"%f",(self.currentValue-minFingerData)*(375.0/(maxFingerData-minFingerData))]];
-                           }
-                           self.oldValue = self.currentValue;
-                       }
+
+                        }
                    };
         }];
     }
@@ -332,9 +339,27 @@
     
 }
 
+- (void)setGameSetting:(NSString *)level
+{
+    if ([level isEqualToString:@"容易"]) {
+        level = @"0";
+    }else if([level isEqualToString:@"中等"]){
+        level = @"1";
+    }else if([level isEqualToString:@"困难"]){
+        level = @"2";
+    }
+    NSString *jsMethod = [NSString stringWithFormat:@"setBluetoothValue(%@)",level];
+    [self.webView evaluateJavaScript:jsMethod completionHandler:^(id _Nullable response, NSError * _Nullable error) {
+        if (error) {
+            DeBugLog(@"js错误%@ %@",response,error);
+        }
+    }];
+}
+
 - (void)setJSData:(NSString *)value
 {
     NSString *jsMethod = [NSString stringWithFormat:@"getBluetoothValue(%@)",value];
+    NSLog(@"实时值是%@",value);
     [self.webView evaluateJavaScript:jsMethod completionHandler:^(id _Nullable response, NSError * _Nullable error) {
         if (error) {
             DeBugLog(@"js错误%@ %@",response,error);
@@ -344,6 +369,8 @@
 
 -(void)loadData{
     [SVProgressHUD showInfoWithStatus:@"开始连接设备"];
+    [self setGameSetting:gameLevel];
+
     self.pipeline.babyBluetooth.having(currPeripheral).and.channel(channelOnPeropheralView).then.connectToPeripherals().discoverServices().discoverCharacteristics().readValueForCharacteristic().discoverDescriptorsForCharacteristic().readValueForDescriptors().begin();
 }
 

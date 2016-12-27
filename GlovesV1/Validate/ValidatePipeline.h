@@ -22,5 +22,6 @@
 @property (nonatomic, strong) NSMutableArray *dataArr1;
 
 @property (nonatomic, strong) BabyBluetooth *babyBluetooth;
+@property (nonatomic, assign) BOOL checkDone;
 
 @end

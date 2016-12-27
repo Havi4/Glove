@@ -13,3 +13,4 @@ extern NSString *selectedBlueName;
 extern BOOL isDeviceOK;
 extern NSInteger minFingerData;
 extern NSInteger maxFingerData;
+extern NSString *gameLevel;

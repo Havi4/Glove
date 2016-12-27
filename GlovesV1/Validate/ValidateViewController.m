@@ -40,6 +40,11 @@
             [self.navigationController pushViewController:gameViewController animated:YES];
         }
     }];
+    [MIObserve(self.pipeline, checkDone) changed:^(id  _Nonnull newValue) {
+        @strongify(self)
+        [self dismissValidateView];
+    }];
+
 
 }
 
